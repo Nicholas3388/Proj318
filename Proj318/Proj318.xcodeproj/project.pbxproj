@@ -11,6 +11,8 @@
 		184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4EA1CA78EC30075049D /* AppDelegate.m */; };
 		184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF4F21CA78EC30075049D /* Assets.xcassets */; };
 		184FF5061CA79C640075049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5051CA79C640075049D /* LoginViewController.m */; };
+		184FF5081CA7A3E40075049D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5071CA7A3E40075049D /* Images.xcassets */; };
+		184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5111CA7A6CE0075049D /* BaseViewController.m */; };
 		ECB9011C437FC68C20F8E519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44185F018951A2A2E516CFE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 		184FF4F71CA78EC30075049D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		184FF5041CA79C640075049D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = LoginView/Controller/LoginViewController.h; sourceTree = "<group>"; };
 		184FF5051CA79C640075049D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = LoginView/Controller/LoginViewController.m; sourceTree = "<group>"; };
+		184FF5071CA7A3E40075049D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		184FF5101CA7A6CE0075049D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = BaseView/Controller/BaseViewController.h; sourceTree = "<group>"; };
+		184FF5111CA7A6CE0075049D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = BaseView/Controller/BaseViewController.m; sourceTree = "<group>"; };
 		3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44185F018951A2A2E516CFE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,11 +66,14 @@
 		184FF4E51CA78EC30075049D /* Proj318 */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5131CA7A7530075049D /* MainView */,
+				184FF5091CA7A6850075049D /* BaseView */,
 				184FF4FD1CA79BF50075049D /* LoginView */,
 				184FF4E91CA78EC30075049D /* AppDelegate.h */,
 				184FF4EA1CA78EC30075049D /* AppDelegate.m */,
 				184FF4F21CA78EC30075049D /* Assets.xcassets */,
 				184FF4F71CA78EC30075049D /* Info.plist */,
+				184FF5071CA7A3E40075049D /* Images.xcassets */,
 				184FF4E61CA78EC30075049D /* Supporting Files */,
 			);
 			path = Proj318;
@@ -106,6 +114,70 @@
 			sourceTree = "<group>";
 		};
 		184FF5001CA79C0B0075049D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		184FF5091CA7A6850075049D /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF50C1CA7A69A0075049D /* Model */,
+				184FF50B1CA7A6930075049D /* View */,
+				184FF50A1CA7A68C0075049D /* Controller */,
+			);
+			name = BaseView;
+			sourceTree = "<group>";
+		};
+		184FF50A1CA7A68C0075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5101CA7A6CE0075049D /* BaseViewController.h */,
+				184FF5111CA7A6CE0075049D /* BaseViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF50B1CA7A6930075049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		184FF50C1CA7A69A0075049D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		184FF5131CA7A7530075049D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5161CA7A7690075049D /* Model */,
+				184FF5151CA7A7620075049D /* View */,
+				184FF5141CA7A75A0075049D /* Controller */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		184FF5141CA7A75A0075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5151CA7A7620075049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		184FF5161CA7A7690075049D /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -190,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
+				184FF5081CA7A3E40075049D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */,
+				184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */,
 				184FF4E81CA78EC30075049D /* main.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,
 			);
@@ -344,6 +418,7 @@
 			baseConfigurationReference = 3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Proj318/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -358,6 +433,7 @@
 			baseConfigurationReference = CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Proj318/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
