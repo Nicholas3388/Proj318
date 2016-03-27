@@ -13,3 +13,13 @@
 "kForgot" = "Forgot";
 "kInputName" = "Input your name";
 "kInputPassword" = "Input password";
+"kPhone" = "Phone";
+"kVerifCode" = "Verif Code";
+"kGetVerifCode" = "Get";
+"kNextStep" = "NEXT";
+"kInputPhone" = "Input your phone";
+"kInputVerifCode" = "Input verification code";
+"kMessage" = "Message";
+"kContact" = "Contact";
+"kTodo" = "Todo";
+"kMe" = "Me";

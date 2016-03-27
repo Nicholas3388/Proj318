@@ -25,6 +25,24 @@
 		184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5691CA81D540075049D /* TheRegisterView.m */; };
 		184FF56C1CA81D540075049D /* TheRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF56A1CA81D540075049D /* TheRegisterView.xib */; };
 		184FF56F1CA81DBA0075049D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF56E1CA81DBA0075049D /* Tools.m */; };
+		184FF5751CA824C40075049D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5741CA824C40075049D /* MainViewController.m */; };
+		184FF5851CA8292C0075049D /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5791CA8292C0075049D /* contact.png */; };
+		184FF5861CA8292C0075049D /* contact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57A1CA8292C0075049D /* contact@2x.png */; };
+		184FF5871CA8292C0075049D /* contact@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57B1CA8292C0075049D /* contact@3x.png */; };
+		184FF5881CA8292C0075049D /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57C1CA8292C0075049D /* me.png */; };
+		184FF5891CA8292C0075049D /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57D1CA8292C0075049D /* me@2x.png */; };
+		184FF58A1CA8292C0075049D /* me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57E1CA8292C0075049D /* me@3x.png */; };
+		184FF58B1CA8292C0075049D /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF57F1CA8292C0075049D /* message.png */; };
+		184FF58C1CA8292C0075049D /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5801CA8292C0075049D /* message@2x.png */; };
+		184FF58D1CA8292C0075049D /* message@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5811CA8292C0075049D /* message@3x.png */; };
+		184FF58E1CA8292C0075049D /* todo.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5821CA8292C0075049D /* todo.png */; };
+		184FF58F1CA8292C0075049D /* todo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5831CA8292C0075049D /* todo@2x.png */; };
+		184FF5901CA8292C0075049D /* todo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5841CA8292C0075049D /* todo@3x.png */; };
+		184FF5A71CA82A6D0075049D /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5A61CA82A6D0075049D /* MeViewController.m */; };
+		184FF5AA1CA82A780075049D /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5A91CA82A780075049D /* TodoViewController.m */; };
+		184FF5AD1CA82A930075049D /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5AC1CA82A930075049D /* ContactViewController.m */; };
+		184FF5B01CA82A9D0075049D /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5AF1CA82A9D0075049D /* MessageViewController.m */; };
+		184FF5B41CA82F720075049D /* btn_set_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5B31CA82F720075049D /* btn_set_normal@2x.png */; };
 		ECB9011C437FC68C20F8E519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44185F018951A2A2E516CFE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +77,29 @@
 		184FF56A1CA81D540075049D /* TheRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheRegisterView.xib; path = RegisterView/View/TheRegisterView.xib; sourceTree = "<group>"; };
 		184FF56D1CA81DBA0075049D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = Utilities/Tools.h; sourceTree = "<group>"; };
 		184FF56E1CA81DBA0075049D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tools.m; path = Utilities/Tools.m; sourceTree = "<group>"; };
+		184FF5731CA824C40075049D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = MainView/Controller/MainViewController.h; sourceTree = "<group>"; };
+		184FF5741CA824C40075049D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = MainView/Controller/MainViewController.m; sourceTree = "<group>"; };
+		184FF5791CA8292C0075049D /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = contact.png; path = Resource/MainView/btn/contact.png; sourceTree = "<group>"; };
+		184FF57A1CA8292C0075049D /* contact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contact@2x.png"; path = "Resource/MainView/btn/contact@2x.png"; sourceTree = "<group>"; };
+		184FF57B1CA8292C0075049D /* contact@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "contact@3x.png"; path = "Resource/MainView/btn/contact@3x.png"; sourceTree = "<group>"; };
+		184FF57C1CA8292C0075049D /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = me.png; path = Resource/MainView/btn/me.png; sourceTree = "<group>"; };
+		184FF57D1CA8292C0075049D /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@2x.png"; path = "Resource/MainView/btn/me@2x.png"; sourceTree = "<group>"; };
+		184FF57E1CA8292C0075049D /* me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "me@3x.png"; path = "Resource/MainView/btn/me@3x.png"; sourceTree = "<group>"; };
+		184FF57F1CA8292C0075049D /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = message.png; path = Resource/MainView/btn/message.png; sourceTree = "<group>"; };
+		184FF5801CA8292C0075049D /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message@2x.png"; path = "Resource/MainView/btn/message@2x.png"; sourceTree = "<group>"; };
+		184FF5811CA8292C0075049D /* message@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "message@3x.png"; path = "Resource/MainView/btn/message@3x.png"; sourceTree = "<group>"; };
+		184FF5821CA8292C0075049D /* todo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = todo.png; path = Resource/MainView/btn/todo.png; sourceTree = "<group>"; };
+		184FF5831CA8292C0075049D /* todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@2x.png"; path = "Resource/MainView/btn/todo@2x.png"; sourceTree = "<group>"; };
+		184FF5841CA8292C0075049D /* todo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "todo@3x.png"; path = "Resource/MainView/btn/todo@3x.png"; sourceTree = "<group>"; };
+		184FF5A51CA82A6D0075049D /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeViewController.h; path = MeView/Controller/MeViewController.h; sourceTree = "<group>"; };
+		184FF5A61CA82A6D0075049D /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MeViewController.m; path = MeView/Controller/MeViewController.m; sourceTree = "<group>"; };
+		184FF5A81CA82A780075049D /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoViewController.h; path = TodoView/Controller/TodoViewController.h; sourceTree = "<group>"; };
+		184FF5A91CA82A780075049D /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoViewController.m; path = TodoView/Controller/TodoViewController.m; sourceTree = "<group>"; };
+		184FF5AB1CA82A930075049D /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContactViewController.h; path = ContactView/Controller/ContactViewController.h; sourceTree = "<group>"; };
+		184FF5AC1CA82A930075049D /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContactViewController.m; path = ContactView/Controller/ContactViewController.m; sourceTree = "<group>"; };
+		184FF5AE1CA82A9D0075049D /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = MessageView/Controller/MessageViewController.h; sourceTree = "<group>"; };
+		184FF5AF1CA82A9D0075049D /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = MessageView/Controller/MessageViewController.m; sourceTree = "<group>"; };
+		184FF5B31CA82F720075049D /* btn_set_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "btn_set_normal@2x.png"; path = "Resource/MeView/btn/btn_set_normal@2x.png"; sourceTree = "<group>"; };
 		3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44185F018951A2A2E516CFE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,13 +138,17 @@
 		184FF4E51CA78EC30075049D /* Proj318 */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5941CA829D70075049D /* MeView */,
+				184FF5931CA829CF0075049D /* TodoView */,
+				184FF5921CA829C80075049D /* ContactView */,
+				184FF5911CA829C00075049D /* MessageView */,
 				184FF5541CA81C740075049D /* RegisterView */,
+				184FF4FD1CA79BF50075049D /* LoginView */,
 				184FF52D1CA80CF00075049D /* StartView */,
-				184FF51F1CA7F7920075049D /* Resource */,
 				184FF5131CA7A7530075049D /* MainView */,
 				184FF5091CA7A6850075049D /* BaseView */,
-				184FF4FD1CA79BF50075049D /* LoginView */,
 				184FF5451CA811A80075049D /* Utilities */,
+				184FF51F1CA7F7920075049D /* Resource */,
 				184FF4E91CA78EC30075049D /* AppDelegate.h */,
 				184FF4EA1CA78EC30075049D /* AppDelegate.m */,
 				184FF4F21CA78EC30075049D /* Assets.xcassets */,
@@ -205,6 +250,8 @@
 		184FF5141CA7A75A0075049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5731CA824C40075049D /* MainViewController.h */,
+				184FF5741CA824C40075049D /* MainViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -226,6 +273,8 @@
 		184FF51F1CA7F7920075049D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5B11CA82F540075049D /* MeView */,
+				184FF5771CA8290F0075049D /* MainView */,
 				184FF5201CA7F7A00075049D /* LoginView */,
 			);
 			name = Resource;
@@ -337,6 +386,117 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		184FF5771CA8290F0075049D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5781CA829180075049D /* btn */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		184FF5781CA829180075049D /* btn */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5791CA8292C0075049D /* contact.png */,
+				184FF57A1CA8292C0075049D /* contact@2x.png */,
+				184FF57B1CA8292C0075049D /* contact@3x.png */,
+				184FF57C1CA8292C0075049D /* me.png */,
+				184FF57D1CA8292C0075049D /* me@2x.png */,
+				184FF57E1CA8292C0075049D /* me@3x.png */,
+				184FF57F1CA8292C0075049D /* message.png */,
+				184FF5801CA8292C0075049D /* message@2x.png */,
+				184FF5811CA8292C0075049D /* message@3x.png */,
+				184FF5821CA8292C0075049D /* todo.png */,
+				184FF5831CA8292C0075049D /* todo@2x.png */,
+				184FF5841CA8292C0075049D /* todo@3x.png */,
+			);
+			name = btn;
+			sourceTree = "<group>";
+		};
+		184FF5911CA829C00075049D /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5981CA829F30075049D /* Controller */,
+			);
+			name = MessageView;
+			sourceTree = "<group>";
+		};
+		184FF5921CA829C80075049D /* ContactView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5971CA829ED0075049D /* Controller */,
+			);
+			name = ContactView;
+			sourceTree = "<group>";
+		};
+		184FF5931CA829CF0075049D /* TodoView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5961CA829E60075049D /* Controller */,
+			);
+			name = TodoView;
+			sourceTree = "<group>";
+		};
+		184FF5941CA829D70075049D /* MeView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5951CA829DE0075049D /* Controller */,
+			);
+			name = MeView;
+			sourceTree = "<group>";
+		};
+		184FF5951CA829DE0075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5A51CA82A6D0075049D /* MeViewController.h */,
+				184FF5A61CA82A6D0075049D /* MeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5961CA829E60075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5A81CA82A780075049D /* TodoViewController.h */,
+				184FF5A91CA82A780075049D /* TodoViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5971CA829ED0075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5AB1CA82A930075049D /* ContactViewController.h */,
+				184FF5AC1CA82A930075049D /* ContactViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5981CA829F30075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5AE1CA82A9D0075049D /* MessageViewController.h */,
+				184FF5AF1CA82A9D0075049D /* MessageViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5B11CA82F540075049D /* MeView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5B21CA82F5B0075049D /* btn */,
+			);
+			name = MeView;
+			sourceTree = "<group>";
+		};
+		184FF5B21CA82F5B0075049D /* btn */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5B31CA82F720075049D /* btn_set_normal@2x.png */,
+			);
+			name = btn;
+			sourceTree = "<group>";
+		};
 		98CC3CFD1E64DB9354B0B289 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,14 +575,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184FF58C1CA8292C0075049D /* message@2x.png in Resources */,
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
+				184FF58A1CA8292C0075049D /* me@3x.png in Resources */,
+				184FF5891CA8292C0075049D /* me@2x.png in Resources */,
+				184FF58D1CA8292C0075049D /* message@3x.png in Resources */,
 				184FF54B1CA812E80075049D /* Localizable.strings in Resources */,
 				184FF5421CA811870075049D /* loginView-568h@2x.png in Resources */,
+				184FF5881CA8292C0075049D /* me.png in Resources */,
 				184FF5081CA7A3E40075049D /* Images.xcassets in Resources */,
 				184FF5431CA811870075049D /* loginView@2x.png in Resources */,
 				184FF56C1CA81D540075049D /* TheRegisterView.xib in Resources */,
+				184FF5B41CA82F720075049D /* btn_set_normal@2x.png in Resources */,
+				184FF5901CA8292C0075049D /* todo@3x.png in Resources */,
+				184FF58E1CA8292C0075049D /* todo.png in Resources */,
+				184FF5851CA8292C0075049D /* contact.png in Resources */,
 				184FF5671CA81D2F0075049D /* TheLoginView.xib in Resources */,
 				184FF5511CA815C60075049D /* TheStartView.xib in Resources */,
+				184FF5871CA8292C0075049D /* contact@3x.png in Resources */,
+				184FF5861CA8292C0075049D /* contact@2x.png in Resources */,
+				184FF58B1CA8292C0075049D /* message.png in Resources */,
+				184FF58F1CA8292C0075049D /* todo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,15 +654,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184FF5751CA824C40075049D /* MainViewController.m in Sources */,
 				184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */,
 				184FF56F1CA81DBA0075049D /* Tools.m in Sources */,
 				184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */,
 				184FF4E81CA78EC30075049D /* main.m in Sources */,
 				184FF55D1CA81CB20075049D /* RegisterViewController.m in Sources */,
+				184FF5B01CA82A9D0075049D /* MessageViewController.m in Sources */,
+				184FF5A71CA82A6D0075049D /* MeViewController.m in Sources */,
+				184FF5AD1CA82A930075049D /* ContactViewController.m in Sources */,
 				184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */,
 				184FF5361CA80E590075049D /* StartViewController.m in Sources */,
 				184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,
+				184FF5AA1CA82A780075049D /* TodoViewController.m in Sources */,
 				184FF53C1CA80EAA0075049D /* TheStartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

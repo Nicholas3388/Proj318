@@ -9,6 +9,7 @@
 #import "StartViewController.h"
 #import "TheStartView.h"
 #import "LoginViewController.h"
+#import "RegisterViewController.h"
 
 @implementation StartViewController {
     // private
@@ -51,7 +52,9 @@
 }
 
 - (void)onRegisterButtonTouched {
-    
+    RegisterViewController *rvc = [[RegisterViewController alloc]init];
+    [self.navigationController pushViewController:rvc animated:YES];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)onLogin {
@@ -59,6 +62,7 @@
     
     LoginViewController *lvc = [[LoginViewController alloc]init];
     [self.navigationController pushViewController:lvc animated:YES];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 @end

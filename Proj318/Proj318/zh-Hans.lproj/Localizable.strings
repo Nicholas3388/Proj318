@@ -13,3 +13,13 @@
 "kForgot" = "忘记密码";
 "kInputName" = "请输入用户名";
 "kInputPassword" = "请输入密码";
+"kPhone" = "手机号";
+"kVerifCode" = "验证码";
+"kGetVerifCode" = "获取验证码";
+"kNextStep" = "下一步";
+"kInputPhone" = "请输入您的手机号";
+"kInputVerifCode" = "请输入手机验证码";
+"kMessage" = "信息";
+"kContact" = "联系人";
+"kTodo" = "待办";
+"kMe" = "我";

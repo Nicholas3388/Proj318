@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "TheLoginView.h"
+#import "MainViewController.h"
 
 @implementation LoginViewController {
     // private
@@ -26,6 +27,11 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
+
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
 }
@@ -36,8 +42,19 @@
 
 #pragma mark - layout setup
 - (void)layout {
+    self.title = NSLocalizedString(@"kLogin", nil);
+    
     _loginView = [TheLoginView instanceView];
     [self.view addSubview:_loginView];
+    
+    [_loginView.loginButton addTarget:self action:@selector(onLogin) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)onLogin {
+    // you should request server here
+    
+    MainViewController *mvc = [MainViewController shareInstance];
+    [self.navigationController pushViewController:mvc animated:YES];
 }
 
 @end
