@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  LoginView.h
 //  Proj318
 //
 //  Created by apple on 16/3/27.
@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface TheLoginView : UIView
+
+
++ (TheLoginView *)instanceView;
 
 @end

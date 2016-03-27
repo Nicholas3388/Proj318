@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  StartViewController.h
 //  Proj318
 //
 //  Created by apple on 16/3/27.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface StartViewController : UIViewController
 
 @end

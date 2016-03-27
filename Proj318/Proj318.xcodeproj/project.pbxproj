@@ -13,8 +13,14 @@
 		184FF5061CA79C640075049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5051CA79C640075049D /* LoginViewController.m */; };
 		184FF5081CA7A3E40075049D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5071CA7A3E40075049D /* Images.xcassets */; };
 		184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5111CA7A6CE0075049D /* BaseViewController.m */; };
-		184FF5231CA7F7AF0075049D /* loginView-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */; };
-		184FF5241CA7F7AF0075049D /* loginView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5221CA7F7AF0075049D /* loginView@2x.png */; };
+		184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5291CA7F9160075049D /* TheLoginView.m */; };
+		184FF5361CA80E590075049D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5351CA80E590075049D /* StartViewController.m */; };
+		184FF53C1CA80EAA0075049D /* TheStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF53B1CA80EAA0075049D /* TheStartView.m */; };
+		184FF53E1CA80EBD0075049D /* TheStartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF53D1CA80EBD0075049D /* TheStartView.xib */; };
+		184FF5421CA811870075049D /* loginView-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5401CA811870075049D /* loginView-568h@2x.png */; };
+		184FF5431CA811870075049D /* loginView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5411CA811870075049D /* loginView@2x.png */; };
+		184FF5481CA811C10075049D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5471CA811C10075049D /* Tools.m */; };
+		184FF54B1CA812E80075049D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184FF54D1CA812E80075049D /* Localizable.strings */; };
 		ECB9011C437FC68C20F8E519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44185F018951A2A2E516CFE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +36,19 @@
 		184FF5071CA7A3E40075049D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		184FF5101CA7A6CE0075049D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = BaseView/Controller/BaseViewController.h; sourceTree = "<group>"; };
 		184FF5111CA7A6CE0075049D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = BaseView/Controller/BaseViewController.m; sourceTree = "<group>"; };
-		184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView-568h@2x.png"; path = "Resource/LoginView/loginView-568h@2x.png"; sourceTree = "<group>"; };
-		184FF5221CA7F7AF0075049D /* loginView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView@2x.png"; path = "Resource/LoginView/loginView@2x.png"; sourceTree = "<group>"; };
+		184FF5281CA7F9160075049D /* TheLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheLoginView.h; path = LoginView/View/TheLoginView.h; sourceTree = "<group>"; };
+		184FF5291CA7F9160075049D /* TheLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheLoginView.m; path = LoginView/View/TheLoginView.m; sourceTree = "<group>"; };
+		184FF5341CA80E590075049D /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = StartView/Controller/StartViewController.h; sourceTree = "<group>"; };
+		184FF5351CA80E590075049D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = StartView/Controller/StartViewController.m; sourceTree = "<group>"; };
+		184FF53A1CA80EAA0075049D /* TheStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheStartView.h; path = StartView/View/TheStartView.h; sourceTree = "<group>"; };
+		184FF53B1CA80EAA0075049D /* TheStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheStartView.m; path = StartView/View/TheStartView.m; sourceTree = "<group>"; };
+		184FF53D1CA80EBD0075049D /* TheStartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TheStartView.xib; sourceTree = "<group>"; };
+		184FF5401CA811870075049D /* loginView-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView-568h@2x.png"; path = "Resource/LoginView/bg/loginView-568h@2x.png"; sourceTree = "<group>"; };
+		184FF5411CA811870075049D /* loginView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView@2x.png"; path = "Resource/LoginView/bg/loginView@2x.png"; sourceTree = "<group>"; };
+		184FF5461CA811C10075049D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		184FF5471CA811C10075049D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		184FF54E1CA813020075049D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		184FF54F1CA813FE0075049D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44185F018951A2A2E516CFE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,10 +87,12 @@
 		184FF4E51CA78EC30075049D /* Proj318 */ = {
 			isa = PBXGroup;
 			children = (
+				184FF52D1CA80CF00075049D /* StartView */,
 				184FF51F1CA7F7920075049D /* Resource */,
 				184FF5131CA7A7530075049D /* MainView */,
 				184FF5091CA7A6850075049D /* BaseView */,
 				184FF4FD1CA79BF50075049D /* LoginView */,
+				184FF5451CA811A80075049D /* Utilities */,
 				184FF4E91CA78EC30075049D /* AppDelegate.h */,
 				184FF4EA1CA78EC30075049D /* AppDelegate.m */,
 				184FF4F21CA78EC30075049D /* Assets.xcassets */,
@@ -88,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				184FF4E71CA78EC30075049D /* main.m */,
+				184FF54D1CA812E80075049D /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +134,8 @@
 		184FF4FF1CA79C020075049D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5281CA7F9160075049D /* TheLoginView.h */,
+				184FF5291CA7F9160075049D /* TheLoginView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -200,10 +222,71 @@
 		184FF5201CA7F7A00075049D /* LoginView */ = {
 			isa = PBXGroup;
 			children = (
-				184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */,
-				184FF5221CA7F7AF0075049D /* loginView@2x.png */,
+				184FF5441CA8118D0075049D /* btn */,
+				184FF53F1CA8117A0075049D /* bg */,
 			);
 			name = LoginView;
+			sourceTree = "<group>";
+		};
+		184FF52D1CA80CF00075049D /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5301CA80D070075049D /* Model */,
+				184FF52F1CA80D010075049D /* View */,
+				184FF52E1CA80CF70075049D /* Controller */,
+			);
+			name = StartView;
+			sourceTree = "<group>";
+		};
+		184FF52E1CA80CF70075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5341CA80E590075049D /* StartViewController.h */,
+				184FF5351CA80E590075049D /* StartViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF52F1CA80D010075049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184FF53A1CA80EAA0075049D /* TheStartView.h */,
+				184FF53B1CA80EAA0075049D /* TheStartView.m */,
+				184FF53D1CA80EBD0075049D /* TheStartView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		184FF5301CA80D070075049D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		184FF53F1CA8117A0075049D /* bg */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5401CA811870075049D /* loginView-568h@2x.png */,
+				184FF5411CA811870075049D /* loginView@2x.png */,
+			);
+			name = bg;
+			sourceTree = "<group>";
+		};
+		184FF5441CA8118D0075049D /* btn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = btn;
+			sourceTree = "<group>";
+		};
+		184FF5451CA811A80075049D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5461CA811C10075049D /* Tools.h */,
+				184FF5471CA811C10075049D /* Tools.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		98CC3CFD1E64DB9354B0B289 /* Pods */ = {
@@ -267,6 +350,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 184FF4DA1CA78EC30075049D;
 			productRefGroup = 184FF4E41CA78EC30075049D /* Products */;
@@ -284,9 +368,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
-				184FF5241CA7F7AF0075049D /* loginView@2x.png in Resources */,
-				184FF5231CA7F7AF0075049D /* loginView-568h@2x.png in Resources */,
+				184FF54B1CA812E80075049D /* Localizable.strings in Resources */,
+				184FF53E1CA80EBD0075049D /* TheStartView.xib in Resources */,
+				184FF5421CA811870075049D /* loginView-568h@2x.png in Resources */,
 				184FF5081CA7A3E40075049D /* Images.xcassets in Resources */,
+				184FF5431CA811870075049D /* loginView@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,11 +434,27 @@
 				184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */,
 				184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */,
 				184FF4E81CA78EC30075049D /* main.m in Sources */,
+				184FF5481CA811C10075049D /* Tools.m in Sources */,
+				184FF5361CA80E590075049D /* StartViewController.m in Sources */,
+				184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,
+				184FF53C1CA80EAA0075049D /* TheStartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		184FF54D1CA812E80075049D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184FF54E1CA813020075049D /* en */,
+				184FF54F1CA813FE0075049D /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		184FF4F81CA78EC30075049D /* Debug */ = {

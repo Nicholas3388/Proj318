@@ -1,17 +1,17 @@
 //
-//  LoginViewController.m
+//  StartViewController.m
 //  Proj318
 //
 //  Created by apple on 16/3/27.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "TheLoginView.h"
+#import "StartViewController.h"
+#import "TheStartView.h"
 
-@implementation LoginViewController {
+@implementation StartViewController {
     // private
-    TheLoginView *_loginView;
+    TheStartView *_startView;
 }
 
 #pragma mark - load view
@@ -36,8 +36,8 @@
 
 #pragma mark - layout setup
 - (void)layout {
-    _loginView = [TheLoginView instanceView];
-    [self.view addSubview:_loginView];
+    _startView = [TheStartView instanceView];
+    [self.view addSubview:_startView];
 }
 
 @end
