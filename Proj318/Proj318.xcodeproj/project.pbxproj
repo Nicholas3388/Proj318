@@ -13,6 +13,8 @@
 		184FF5061CA79C640075049D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5051CA79C640075049D /* LoginViewController.m */; };
 		184FF5081CA7A3E40075049D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5071CA7A3E40075049D /* Images.xcassets */; };
 		184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5111CA7A6CE0075049D /* BaseViewController.m */; };
+		184FF5231CA7F7AF0075049D /* loginView-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */; };
+		184FF5241CA7F7AF0075049D /* loginView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5221CA7F7AF0075049D /* loginView@2x.png */; };
 		ECB9011C437FC68C20F8E519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44185F018951A2A2E516CFE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		184FF5071CA7A3E40075049D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		184FF5101CA7A6CE0075049D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = BaseView/Controller/BaseViewController.h; sourceTree = "<group>"; };
 		184FF5111CA7A6CE0075049D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = BaseView/Controller/BaseViewController.m; sourceTree = "<group>"; };
+		184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView-568h@2x.png"; path = "Resource/LoginView/loginView-568h@2x.png"; sourceTree = "<group>"; };
+		184FF5221CA7F7AF0075049D /* loginView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView@2x.png"; path = "Resource/LoginView/loginView@2x.png"; sourceTree = "<group>"; };
 		3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44185F018951A2A2E516CFE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		184FF4E51CA78EC30075049D /* Proj318 */ = {
 			isa = PBXGroup;
 			children = (
+				184FF51F1CA7F7920075049D /* Resource */,
 				184FF5131CA7A7530075049D /* MainView */,
 				184FF5091CA7A6850075049D /* BaseView */,
 				184FF4FD1CA79BF50075049D /* LoginView */,
@@ -184,6 +189,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		184FF51F1CA7F7920075049D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5201CA7F7A00075049D /* LoginView */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		184FF5201CA7F7A00075049D /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5211CA7F7AF0075049D /* loginView-568h@2x.png */,
+				184FF5221CA7F7AF0075049D /* loginView@2x.png */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
 		98CC3CFD1E64DB9354B0B289 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
+				184FF5241CA7F7AF0075049D /* loginView@2x.png in Resources */,
+				184FF5231CA7F7AF0075049D /* loginView-568h@2x.png in Resources */,
 				184FF5081CA7A3E40075049D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
