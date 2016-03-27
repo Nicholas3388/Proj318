@@ -8,3 +8,8 @@
 
 "kRegister" = "REGISTER";
 "kLogin" = "LOGIN";
+"kName" = "Name";
+"kPassword" = "Password";
+"kForgot" = "Forgot";
+"kInputName" = "Input your name";
+"kInputPassword" = "Input password";

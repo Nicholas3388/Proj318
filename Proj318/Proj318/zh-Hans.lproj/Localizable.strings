@@ -8,3 +8,8 @@
 
 "kRegister" = "注册";
 "kLogin" = "登陆";
+"kName" = "用户名";
+"kPassword" = "密码";
+"kForgot" = "忘记密码";
+"kInputName" = "请输入用户名";
+"kInputPassword" = "请输入密码";

@@ -16,11 +16,15 @@
 		184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5291CA7F9160075049D /* TheLoginView.m */; };
 		184FF5361CA80E590075049D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5351CA80E590075049D /* StartViewController.m */; };
 		184FF53C1CA80EAA0075049D /* TheStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF53B1CA80EAA0075049D /* TheStartView.m */; };
-		184FF53E1CA80EBD0075049D /* TheStartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF53D1CA80EBD0075049D /* TheStartView.xib */; };
 		184FF5421CA811870075049D /* loginView-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5401CA811870075049D /* loginView-568h@2x.png */; };
 		184FF5431CA811870075049D /* loginView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5411CA811870075049D /* loginView@2x.png */; };
-		184FF5481CA811C10075049D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5471CA811C10075049D /* Tools.m */; };
 		184FF54B1CA812E80075049D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184FF54D1CA812E80075049D /* Localizable.strings */; };
+		184FF5511CA815C60075049D /* TheStartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5501CA815C60075049D /* TheStartView.xib */; };
+		184FF55D1CA81CB20075049D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF55C1CA81CB20075049D /* RegisterViewController.m */; };
+		184FF5671CA81D2F0075049D /* TheLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF5661CA81D2F0075049D /* TheLoginView.xib */; };
+		184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF5691CA81D540075049D /* TheRegisterView.m */; };
+		184FF56C1CA81D540075049D /* TheRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184FF56A1CA81D540075049D /* TheRegisterView.xib */; };
+		184FF56F1CA81DBA0075049D /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF56E1CA81DBA0075049D /* Tools.m */; };
 		ECB9011C437FC68C20F8E519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44185F018951A2A2E516CFE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,13 +46,19 @@
 		184FF5351CA80E590075049D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = StartView/Controller/StartViewController.m; sourceTree = "<group>"; };
 		184FF53A1CA80EAA0075049D /* TheStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheStartView.h; path = StartView/View/TheStartView.h; sourceTree = "<group>"; };
 		184FF53B1CA80EAA0075049D /* TheStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheStartView.m; path = StartView/View/TheStartView.m; sourceTree = "<group>"; };
-		184FF53D1CA80EBD0075049D /* TheStartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TheStartView.xib; sourceTree = "<group>"; };
 		184FF5401CA811870075049D /* loginView-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView-568h@2x.png"; path = "Resource/LoginView/bg/loginView-568h@2x.png"; sourceTree = "<group>"; };
 		184FF5411CA811870075049D /* loginView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginView@2x.png"; path = "Resource/LoginView/bg/loginView@2x.png"; sourceTree = "<group>"; };
-		184FF5461CA811C10075049D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		184FF5471CA811C10075049D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		184FF54E1CA813020075049D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		184FF54F1CA813FE0075049D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		184FF5501CA815C60075049D /* TheStartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheStartView.xib; path = StartView/View/TheStartView.xib; sourceTree = "<group>"; };
+		184FF55B1CA81CB20075049D /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = RegisterView/Controller/RegisterViewController.h; sourceTree = "<group>"; };
+		184FF55C1CA81CB20075049D /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = RegisterView/Controller/RegisterViewController.m; sourceTree = "<group>"; };
+		184FF5661CA81D2F0075049D /* TheLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheLoginView.xib; path = LoginView/View/TheLoginView.xib; sourceTree = "<group>"; };
+		184FF5681CA81D540075049D /* TheRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheRegisterView.h; path = RegisterView/View/TheRegisterView.h; sourceTree = "<group>"; };
+		184FF5691CA81D540075049D /* TheRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheRegisterView.m; path = RegisterView/View/TheRegisterView.m; sourceTree = "<group>"; };
+		184FF56A1CA81D540075049D /* TheRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheRegisterView.xib; path = RegisterView/View/TheRegisterView.xib; sourceTree = "<group>"; };
+		184FF56D1CA81DBA0075049D /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = Utilities/Tools.h; sourceTree = "<group>"; };
+		184FF56E1CA81DBA0075049D /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tools.m; path = Utilities/Tools.m; sourceTree = "<group>"; };
 		3D4366E0607EEABD4CF79E9E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		44185F018951A2A2E516CFE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4DCA74640645AEA18C4113 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +97,7 @@
 		184FF4E51CA78EC30075049D /* Proj318 */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5541CA81C740075049D /* RegisterView */,
 				184FF52D1CA80CF00075049D /* StartView */,
 				184FF51F1CA7F7920075049D /* Resource */,
 				184FF5131CA7A7530075049D /* MainView */,
@@ -134,6 +145,7 @@
 		184FF4FF1CA79C020075049D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5661CA81D2F0075049D /* TheLoginView.xib */,
 				184FF5281CA7F9160075049D /* TheLoginView.h */,
 				184FF5291CA7F9160075049D /* TheLoginView.m */,
 			);
@@ -250,9 +262,9 @@
 		184FF52F1CA80D010075049D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184FF5501CA815C60075049D /* TheStartView.xib */,
 				184FF53A1CA80EAA0075049D /* TheStartView.h */,
 				184FF53B1CA80EAA0075049D /* TheStartView.m */,
-				184FF53D1CA80EBD0075049D /* TheStartView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -283,10 +295,46 @@
 		184FF5451CA811A80075049D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				184FF5461CA811C10075049D /* Tools.h */,
-				184FF5471CA811C10075049D /* Tools.m */,
+				184FF56D1CA81DBA0075049D /* Tools.h */,
+				184FF56E1CA81DBA0075049D /* Tools.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		184FF5541CA81C740075049D /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5571CA81C8A0075049D /* Model */,
+				184FF5561CA81C850075049D /* View */,
+				184FF5551CA81C7C0075049D /* Controller */,
+			);
+			name = RegisterView;
+			sourceTree = "<group>";
+		};
+		184FF5551CA81C7C0075049D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184FF55B1CA81CB20075049D /* RegisterViewController.h */,
+				184FF55C1CA81CB20075049D /* RegisterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		184FF5561CA81C850075049D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184FF5681CA81D540075049D /* TheRegisterView.h */,
+				184FF5691CA81D540075049D /* TheRegisterView.m */,
+				184FF56A1CA81D540075049D /* TheRegisterView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		184FF5571CA81C8A0075049D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		98CC3CFD1E64DB9354B0B289 /* Pods */ = {
@@ -369,10 +417,12 @@
 			files = (
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
 				184FF54B1CA812E80075049D /* Localizable.strings in Resources */,
-				184FF53E1CA80EBD0075049D /* TheStartView.xib in Resources */,
 				184FF5421CA811870075049D /* loginView-568h@2x.png in Resources */,
 				184FF5081CA7A3E40075049D /* Images.xcassets in Resources */,
 				184FF5431CA811870075049D /* loginView@2x.png in Resources */,
+				184FF56C1CA81D540075049D /* TheRegisterView.xib in Resources */,
+				184FF5671CA81D2F0075049D /* TheLoginView.xib in Resources */,
+				184FF5511CA815C60075049D /* TheStartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,9 +482,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */,
+				184FF56F1CA81DBA0075049D /* Tools.m in Sources */,
 				184FF5121CA7A6CE0075049D /* BaseViewController.m in Sources */,
 				184FF4E81CA78EC30075049D /* main.m in Sources */,
-				184FF5481CA811C10075049D /* Tools.m in Sources */,
+				184FF55D1CA81CB20075049D /* RegisterViewController.m in Sources */,
+				184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */,
 				184FF5361CA80E590075049D /* StartViewController.m in Sources */,
 				184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,

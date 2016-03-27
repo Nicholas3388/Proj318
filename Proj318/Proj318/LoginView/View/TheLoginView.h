@@ -11,6 +11,17 @@
 
 @interface TheLoginView : UIView
 
+@property (strong, nonatomic) IBOutlet UIButton *forgotButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (strong, nonatomic) IBOutlet UITextField *nameTextfield;
+
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextfield;
+
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *passwordLabel;
 
 + (TheLoginView *)instanceView;
 

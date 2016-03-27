@@ -8,6 +8,7 @@
 
 #import "StartViewController.h"
 #import "TheStartView.h"
+#import "LoginViewController.h"
 
 @implementation StartViewController {
     // private
@@ -38,6 +39,26 @@
 - (void)layout {
     _startView = [TheStartView instanceView];
     [self.view addSubview:_startView];
+    
+    [_startView.loginButton addTarget:self action:@selector(onLoginButtonTouched) forControlEvents:UIControlEventTouchUpInside];
+    [_startView.registerButton addTarget:self action:@selector(onRegisterButtonTouched) forControlEvents:UIControlEventTouchUpInside];
+}
+
+#pragma mark - button handler
+- (void)onLoginButtonTouched {
+    // name validation, password validation
+    [self onLogin];
+}
+
+- (void)onRegisterButtonTouched {
+    
+}
+
+- (void)onLogin {
+    // query server here
+    
+    LoginViewController *lvc = [[LoginViewController alloc]init];
+    [self.navigationController pushViewController:lvc animated:YES];
 }
 
 @end
