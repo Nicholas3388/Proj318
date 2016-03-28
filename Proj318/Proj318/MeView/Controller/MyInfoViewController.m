@@ -35,7 +35,8 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
     
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    //_tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40 + 64, self.view.frame.size.width, self.view.frame.size.height - 120) style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorColor = [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1];
@@ -44,6 +45,9 @@
     [self.view addSubview:_tableView];
     
     _headView = [MyDetailInfoView instanceView];
+    _headView.frame = CGRectMake(0, 64, self.view.frame.size.width, 120);
+    _headView.portrait.layer.cornerRadius = _headView.portrait.frame.size.width/2.0;
+    _headView.portrait.clipsToBounds = YES;
     [self.view addSubview:_headView];
 }
 
@@ -88,10 +92,14 @@
             switch (indexPath.row) {
                 case 0:
                 {
+                    cell.item.text = NSLocalizedString(@"kMyName", nil);
+                    cell.content.text = NSLocalizedString(@"kUserName", nil);
                 }
                     break;
                 case 1:
                 {
+                    cell.item.text = NSLocalizedString(@"kAccount", nil);
+                    cell.content.text = @"70600322";
                 }
                     break;
                 case 2:

@@ -9,6 +9,7 @@
 #import "MeViewController.h"
 #import "MeViewCell.h"
 #import "MeViewOtherCell.h"
+#import "MyInfoViewController.h"
 #import "FeedbackViewController.h"
 #import "Tools.h"
 
@@ -175,7 +176,9 @@
     switch (indexPath.section) {
         case 0:
         {
-            
+            MyInfoViewController *myInfoViewController = [[MyInfoViewController alloc] init];
+            myInfoViewController.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:myInfoViewController animated:YES];
         }
             break;
         case 1:
