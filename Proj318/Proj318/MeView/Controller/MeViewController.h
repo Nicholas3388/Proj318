@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
 
-@interface MeViewController : BaseViewController
+@interface MeViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate>
 
 @end

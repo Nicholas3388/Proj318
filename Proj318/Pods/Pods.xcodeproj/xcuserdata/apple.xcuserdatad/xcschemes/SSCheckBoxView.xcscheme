@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DA8FB51B456842DADA075949'
+               BlueprintIdentifier = '5665152C3EE7FD5F920318B3'
                BlueprintName = 'SSCheckBoxView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSSCheckBoxView.a'>

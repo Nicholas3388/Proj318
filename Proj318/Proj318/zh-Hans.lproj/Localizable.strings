@@ -23,3 +23,27 @@
 "kContact" = "联系人";
 "kTodo" = "待办";
 "kMe" = "我";
+"kMyName" = "用户名:";
+"kAccount" = "帐号:";
+"kAccountText" = "账户信息";
+"kNotificationText" = "消息通知";
+"kPrivateText" = "隐私设置";
+"kFeedbackText" = "反馈帮助";
+
+"kDeveloperTitle" = "开发者:";
+"kDeveloper" = "清华大学";
+"kContactTitle" = "联系我们:";
+"kEmail" = "Project318@163.com";
+"kVersionTitle" = "版本号:";
+"kVersion" = "1.0.0";
+
+"kStart" = "开始";
+"kBack" = "返回";
+"kLogout" = "退出帐号";
+
+"kLogoutConfirm" = "确定退出吗？";
+"kConfirm" = "是的";
+"kCancel" = "取消";
+
+"kMyInfo" = "个人信息";
+"kUserName" = "李大嘴";

@@ -7,7 +7,17 @@
 //
 
 #import "Tools.h"
+#import "StartViewController.h"
+#import "AppDelegate.h"
 
 @implementation Tools
+
++ (void)setStartViewController {
+    StartViewController *svc = [[StartViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:svc];
+    nav.navigationBarHidden = YES;
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.window.rootViewController = nav;
+}
 
 @end

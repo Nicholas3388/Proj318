@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "StartViewController.h"
 #import "LoginViewController.h"
+#import "GuideView.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,9 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:svc];
     self.window.rootViewController = nav;
     nav.navigationBarHidden = YES;
+    
+    // set guide view
+    [self setupGuideView];
     
     return YES;
 }
@@ -51,6 +55,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - guide view
+- (void)setupGuideView {
+    GuideView *guideView = [[GuideView alloc]initWithFrame:self.window.bounds];
+    [guideView showView:self.window];
 }
 
 @end

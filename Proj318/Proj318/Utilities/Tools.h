@@ -10,4 +10,6 @@
 
 @interface Tools : NSObject
 
++ (void)setStartViewController;
+
 @end

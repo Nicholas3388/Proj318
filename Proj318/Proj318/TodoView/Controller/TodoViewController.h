@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
 
-@interface TodoViewController : BaseViewController
+@interface TodoViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end

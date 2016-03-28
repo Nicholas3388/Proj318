@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1AE44E672CC237BA493966D5'
+               BlueprintIdentifier = '99C4C9CB6159950C01802474'
                BlueprintName = 'QuickDialog'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libQuickDialog.a'>

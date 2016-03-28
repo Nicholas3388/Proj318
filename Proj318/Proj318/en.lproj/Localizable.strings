@@ -23,3 +23,27 @@
 "kContact" = "Contact";
 "kTodo" = "Todo";
 "kMe" = "Me";
+"kMyName" = "Name:";
+"kAccount" = "Account:";
+"kAccountText" = "Account Info";
+"kNotificationText" = "Notification";
+"kPrivateText" = "Private";
+"kFeedbackText" = "Feedback";
+
+"kDeveloperTitle" = "Developer:";
+"kDeveloper" = "Tsinghua University";
+"kContactTitle" = "Contact Us:";
+"kEmail" = "Project318@163.com";
+"kVersionTitle" = "Version:";
+"kVersion" = "1.0.0";
+
+"kStart" = "START";
+"kBack" = "Back";
+"kLogout" = "LOGOUT";
+
+"kLogoutConfirm" = "Are you sure to exit?";
+"kConfirm" = "Yes";
+"kCancel" = "Cancel";
+
+"kMyInfo" = "My Info";
+"kUserName" = "Alex";

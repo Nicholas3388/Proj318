@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
 
-@interface ContactViewController : BaseViewController
+@interface ContactViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
 
 @end
