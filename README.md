@@ -6,8 +6,8 @@ Build with Xcode7
 =========================
 ## How to Build
 
-*Open Proj318.xcworkspace instead of Proj318.xcodeproj
-*click run to run the project with Xcode simulator.
+* Open Proj318.xcworkspace instead of Proj318.xcodeproj
+* Click run to run the project with Xcode simulator.
 
 =========================
 ## Contact Me
