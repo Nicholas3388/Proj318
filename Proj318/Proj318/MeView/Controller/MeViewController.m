@@ -11,6 +11,9 @@
 #import "MeViewOtherCell.h"
 #import "MyInfoViewController.h"
 #import "FeedbackViewController.h"
+#import "AccountViewController.h"
+#import "PrivateViewController.h"
+#import "NotificationViewController.h"
 #import "Tools.h"
 
 #import "QRootElement.h"
@@ -183,6 +186,28 @@
             break;
         case 1:
         {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    AccountViewController *avc = [[AccountViewController alloc]init];
+                    [self.navigationController pushViewController:avc animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                    NotificationViewController *nvc = [[NotificationViewController alloc]init];
+                    [self.navigationController pushViewController:nvc animated:YES];
+                }
+                    break;
+                case 2:
+                {
+                    PrivateViewController *pvc = [[PrivateViewController alloc]init];
+                    [self.navigationController pushViewController:pvc animated:YES];
+                }
+                    break;
+                default:
+                    break;
+            }
         }
             break;
         case 2:

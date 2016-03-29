@@ -13,6 +13,9 @@
 		18374BE01CAA9AF7004C379E /* ForgotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BDF1CAA9AF7004C379E /* ForgotViewController.m */; };
 		18374BE91CAA9B66004C379E /* TheForgotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BE71CAA9B66004C379E /* TheForgotView.m */; };
 		18374BEA1CAA9B66004C379E /* TheForgotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18374BE81CAA9B66004C379E /* TheForgotView.xib */; };
+		18374BF01CAAC657004C379E /* PrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BEF1CAAC657004C379E /* PrivateViewController.m */; };
+		18374BF91CAAC88C004C379E /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BF81CAAC88C004C379E /* NotificationViewController.m */; };
+		18374BFF1CAAC90A004C379E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BFE1CAAC90A004C379E /* AccountViewController.m */; };
 		184FF4E81CA78EC30075049D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4E71CA78EC30075049D /* main.m */; };
 		184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4EA1CA78EC30075049D /* AppDelegate.m */; };
 		184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF4F21CA78EC30075049D /* Assets.xcassets */; };
@@ -91,6 +94,12 @@
 		18374BE61CAA9B66004C379E /* TheForgotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheForgotView.h; path = LoginView/View/TheForgotView.h; sourceTree = "<group>"; };
 		18374BE71CAA9B66004C379E /* TheForgotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheForgotView.m; path = LoginView/View/TheForgotView.m; sourceTree = "<group>"; };
 		18374BE81CAA9B66004C379E /* TheForgotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheForgotView.xib; path = LoginView/View/TheForgotView.xib; sourceTree = "<group>"; };
+		18374BEE1CAAC657004C379E /* PrivateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivateViewController.h; path = MeView/Controller/PrivateViewController.h; sourceTree = "<group>"; };
+		18374BEF1CAAC657004C379E /* PrivateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivateViewController.m; path = MeView/Controller/PrivateViewController.m; sourceTree = "<group>"; };
+		18374BF71CAAC88C004C379E /* NotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationViewController.h; path = MeView/Controller/NotificationViewController.h; sourceTree = "<group>"; };
+		18374BF81CAAC88C004C379E /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationViewController.m; path = MeView/Controller/NotificationViewController.m; sourceTree = "<group>"; };
+		18374BFD1CAAC90A004C379E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountViewController.h; path = MeView/Controller/AccountViewController.h; sourceTree = "<group>"; };
+		18374BFE1CAAC90A004C379E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountViewController.m; path = MeView/Controller/AccountViewController.m; sourceTree = "<group>"; };
 		184FF4E31CA78EC30075049D /* Proj318.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proj318.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184FF4E71CA78EC30075049D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		184FF4E91CA78EC30075049D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -548,6 +557,12 @@
 		184FF5951CA829DE0075049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18374BFD1CAAC90A004C379E /* AccountViewController.h */,
+				18374BFE1CAAC90A004C379E /* AccountViewController.m */,
+				18374BF71CAAC88C004C379E /* NotificationViewController.h */,
+				18374BF81CAAC88C004C379E /* NotificationViewController.m */,
+				18374BEE1CAAC657004C379E /* PrivateViewController.h */,
+				18374BEF1CAAC657004C379E /* PrivateViewController.m */,
 				18A34DE51CA92B15009A33FD /* MyInfoViewController.h */,
 				18A34DE61CA92B15009A33FD /* MyInfoViewController.m */,
 				18A34DA11CA8DE67009A33FD /* FeedbackViewController.h */,
@@ -974,11 +989,14 @@
 				184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,
 				184FF5AA1CA82A780075049D /* TodoViewController.m in Sources */,
+				18374BF91CAAC88C004C379E /* NotificationViewController.m in Sources */,
 				18A34DF01CA9302A009A33FD /* MyDetailInfoView.m in Sources */,
 				18A34DFC1CA936DF009A33FD /* MyOtherInfoViewCell.m in Sources */,
 				184FF53C1CA80EAA0075049D /* TheStartView.m in Sources */,
+				18374BF01CAAC657004C379E /* PrivateViewController.m in Sources */,
 				18A34DA31CA8DE67009A33FD /* FeedbackViewController.m in Sources */,
 				18A34DDB1CA9135D009A33FD /* GuideView.m in Sources */,
+				18374BFF1CAAC90A004C379E /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
