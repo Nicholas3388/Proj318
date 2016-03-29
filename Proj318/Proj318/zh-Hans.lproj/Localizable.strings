@@ -48,3 +48,5 @@
 "kMyInfo" = "个人信息";
 "kUserName" = "李大嘴";
 "kDone" = "完成";
+"kDelete" = "删除";
+"kSlideDelete" = "向左滑动删除";

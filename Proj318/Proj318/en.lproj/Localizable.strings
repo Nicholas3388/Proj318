@@ -48,3 +48,5 @@
 "kMyInfo" = "My Info";
 "kUserName" = "Alex";
 "kDone" = "DONE";
+"kDelete" = "Delete";
+"kSlideDelete" = "Left slide to remove item";

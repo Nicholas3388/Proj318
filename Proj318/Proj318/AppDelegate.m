@@ -10,6 +10,9 @@
 #import "StartViewController.h"
 #import "LoginViewController.h"
 #import "GuideView.h"
+#import "BPush.h"
+
+static BOOL isBackGroundActivateApplication;
 
 @interface AppDelegate ()
 
@@ -31,6 +34,29 @@
     
     // set guide view
     [self setupGuideView];
+    
+    // setup Baidu Push
+    // iOS8 needs the following APIs
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        UIUserNotificationType myTypes = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:myTypes categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    }else {
+        UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound;
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:myTypes];
+    }
+    
+#warning 测试 开发环境 时需要修改BPushMode为BPushModeDevelopment 需要修改Apikey为自己的Apikey
+    [BPush registerChannel:launchOptions apiKey:@"xxxxxxxxxx" pushMode:BPushModeDevelopment withFirstAction:@"Open" withSecondAction:@"Reply" withCategory:@"test" isDebug:YES];
+    // Get push arguments
+    NSDictionary *userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (userInfo) {
+        [BPush handleNotification:userInfo];
+    }
+    
+    // clear badges
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
     
     return YES;
 }
@@ -55,6 +81,96 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    completionHandler(UIBackgroundFetchResultNewData);
+    NSLog(@"********** iOS7.0+ background **********");
+    if (application.applicationState == UIApplicationStateActive) {
+        NSLog(@"acitve ");
+        UIAlertView *alertView =[[UIAlertView alloc]initWithTitle:@"收到一条消息" message:userInfo[@"aps"][@"alert"] delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
+        [alertView show];
+    }
+    
+    if (application.applicationState == UIApplicationStateInactive && !isBackGroundActivateApplication)
+    {
+        // background mode
+    }
+    
+    if (application.applicationState == UIApplicationStateBackground) {
+        NSLog(@"background is Activated Application ");
+        
+    }
+    
+    NSLog(@"%@",userInfo);
+}
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings
+{
+    
+    [application registerForRemoteNotifications];
+    
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    NSLog(@"test:%@",deviceToken);
+    [BPush registerDeviceToken:deviceToken];
+    [BPush bindChannelWithCompleteHandler:^(id result, NSError *error) {
+        
+        if (error) {
+            return ;
+        }
+        if (result) {
+            // bind successfully
+            if ([result[@"error_code"]intValue]!=0) {
+                return;
+            }
+            // get channel_id
+            NSString *myChannel_id = [BPush getChannelId];
+            NSLog(@"==%@",myChannel_id);
+            
+            [BPush listTagsWithCompleteHandler:^(id result, NSError *error) {
+                if (result) {
+                    NSLog(@"result ============== %@",result);
+                }
+            }];
+            [BPush setTag:@"Mytag" withCompleteHandler:^(id result, NSError *error) {
+                if (result) {
+                    NSLog(@"set tag successfully");
+                }
+            }];
+        }
+    }];
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
+{
+    NSLog(@"DeviceToken error，reason: %@",error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [BPush handleNotification:userInfo];
+    NSLog(@"********** ios<7.0 **********");
+    if (application.applicationState == UIApplicationStateActive || application.applicationState == UIApplicationStateBackground) {
+        NSLog(@"acitve or background");
+        // foreground
+    }
+    else
+    {
+        
+    }
+    
+    NSLog(@"%@",userInfo);
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"recieved local notification");
+    [BPush showLocalNotificationAtFront:notification identifierKey:nil];
 }
 
 #pragma mark - guide view

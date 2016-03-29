@@ -9,6 +9,8 @@
 #import "TodoViewController.h"
 #import "TodoTableViewCell.h"
 
+static int tableRows = 3;
+
 @implementation TodoViewController {
     // private
     UITableView *_tableView;
@@ -62,6 +64,8 @@
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
+    cell.showsReorderControl =YES;
+    
     return cell;
 }
 
@@ -71,7 +75,26 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return tableRows;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NSLocalizedString(@"kDelete", nil);
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        /*do something here，such as deleting the data in database*/
+        /*delete one row in tableView*/
+        tableRows--;
+        
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
 }
 
 @end

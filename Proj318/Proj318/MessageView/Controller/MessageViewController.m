@@ -10,6 +10,8 @@
 #import "MJRefresh.h"
 #import "MJFooterView.h"
 
+static int tableRows = 8;
+
 @implementation MessageViewController {
     // private
     UITableView *_tableView;
@@ -53,7 +55,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 8;
+    return tableRows;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,12 +74,43 @@
     }
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.textLabel.text = NSLocalizedString(@"kSlideDelete", nil);
+    
+    cell.showsReorderControl =YES;
     
     return cell;
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NSLocalizedString(@"kDelete", nil);
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        /*do something here，such as deleting the data in database*/
+        /*delete one row in tableView*/
+        tableRows--;
+        
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 - (void)loadMoreData {
     // hide foot refresh info
+    if (tableRows != 8) {
+        tableRows = 8;
+        [_tableView reloadData];
+    }
     [_tableView.mj_footer endRefreshing];
 }
 @end

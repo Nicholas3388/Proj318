@@ -11,6 +11,8 @@
 #import "MJFooterView.h"
 #import "TodoTableViewCell.h"
 
+static int tableRows = 5;
+
 @implementation ContactViewController {
     // private
     UITableView *_tableView;
@@ -54,7 +56,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return tableRows;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -77,10 +79,36 @@
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
+    cell.showsReorderControl =YES;
+    
     return cell;
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewCellEditingStyleDelete;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return NSLocalizedString(@"kDelete", nil);
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        /*do something here，such as deleting the data in database*/
+        /*delete one row in tableView*/
+        tableRows--;
+        
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 - (void)loadMoreData {
+    if (tableRows != 5) {
+        tableRows = 5;
+        [_tableView reloadData];
+    }
+    
     // hide foot refresh info
     [_tableView.mj_footer endRefreshing];
 }
