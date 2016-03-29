@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "TheLoginView.h"
 #import "MainViewController.h"
+#import "ForgotViewController.h"
 
 @implementation LoginViewController {
     // private
@@ -48,6 +49,8 @@
     [self.view addSubview:_loginView];
     
     [_loginView.loginButton addTarget:self action:@selector(onLogin) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_loginView.forgotButton addTarget:self action:@selector(onForgotPassword) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)onLogin {
@@ -55,6 +58,11 @@
     
     MainViewController *mvc = [MainViewController shareInstance];
     [self.navigationController pushViewController:mvc animated:YES];
+}
+
+- (void)onForgotPassword {
+    ForgotViewController *fvc = [[ForgotViewController alloc]init];
+    [self.navigationController pushViewController:fvc animated:YES];
 }
 
 @end

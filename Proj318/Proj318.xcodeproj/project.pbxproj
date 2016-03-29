@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18374BD71CAA9A13004C379E /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18374BD51CAA9A13004C379E /* libBPush.a */; };
+		18374BD81CAA9A13004C379E /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 18374BD61CAA9A13004C379E /* test.caf */; };
+		18374BDA1CAA9A5C004C379E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18374BD91CAA9A5C004C379E /* libz.tbd */; };
+		18374BE01CAA9AF7004C379E /* ForgotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BDF1CAA9AF7004C379E /* ForgotViewController.m */; };
+		18374BE91CAA9B66004C379E /* TheForgotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BE71CAA9B66004C379E /* TheForgotView.m */; };
+		18374BEA1CAA9B66004C379E /* TheForgotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18374BE81CAA9B66004C379E /* TheForgotView.xib */; };
 		184FF4E81CA78EC30075049D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4E71CA78EC30075049D /* main.m */; };
 		184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4EA1CA78EC30075049D /* AppDelegate.m */; };
 		184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF4F21CA78EC30075049D /* Assets.xcassets */; };
@@ -76,6 +82,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18374BD41CAA9A13004C379E /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPush.h; path = Vendor/libBaiduPush/BPush.h; sourceTree = "<group>"; };
+		18374BD51CAA9A13004C379E /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBPush.a; path = Vendor/libBaiduPush/libBPush.a; sourceTree = "<group>"; };
+		18374BD61CAA9A13004C379E /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.caf; path = Vendor/libBaiduPush/test.caf; sourceTree = "<group>"; };
+		18374BD91CAA9A5C004C379E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		18374BDE1CAA9AF7004C379E /* ForgotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForgotViewController.h; path = LoginView/Controller/ForgotViewController.h; sourceTree = "<group>"; };
+		18374BDF1CAA9AF7004C379E /* ForgotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForgotViewController.m; path = LoginView/Controller/ForgotViewController.m; sourceTree = "<group>"; };
+		18374BE61CAA9B66004C379E /* TheForgotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheForgotView.h; path = LoginView/View/TheForgotView.h; sourceTree = "<group>"; };
+		18374BE71CAA9B66004C379E /* TheForgotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheForgotView.m; path = LoginView/View/TheForgotView.m; sourceTree = "<group>"; };
+		18374BE81CAA9B66004C379E /* TheForgotView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TheForgotView.xib; path = LoginView/View/TheForgotView.xib; sourceTree = "<group>"; };
 		184FF4E31CA78EC30075049D /* Proj318.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proj318.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184FF4E71CA78EC30075049D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		184FF4E91CA78EC30075049D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -178,6 +193,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18374BDA1CAA9A5C004C379E /* libz.tbd in Frameworks */,
+				18374BD71CAA9A13004C379E /* libBPush.a in Frameworks */,
 				B9FA52236ACC107FBE8E0BFA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +269,8 @@
 		184FF4FE1CA79BFC0075049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18374BDE1CAA9AF7004C379E /* ForgotViewController.h */,
+				18374BDF1CAA9AF7004C379E /* ForgotViewController.m */,
 				184FF5041CA79C640075049D /* LoginViewController.h */,
 				184FF5051CA79C640075049D /* LoginViewController.m */,
 			);
@@ -261,6 +280,9 @@
 		184FF4FF1CA79C020075049D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18374BE61CAA9B66004C379E /* TheForgotView.h */,
+				18374BE71CAA9B66004C379E /* TheForgotView.m */,
+				18374BE81CAA9B66004C379E /* TheForgotView.xib */,
 				184FF5661CA81D2F0075049D /* TheLoginView.xib */,
 				184FF5281CA7F9160075049D /* TheLoginView.h */,
 				184FF5291CA7F9160075049D /* TheLoginView.m */,
@@ -707,6 +729,9 @@
 		18A34DBE1CA90F85009A33FD /* libBaiduPush */ = {
 			isa = PBXGroup;
 			children = (
+				18374BD41CAA9A13004C379E /* BPush.h */,
+				18374BD51CAA9A13004C379E /* libBPush.a */,
+				18374BD61CAA9A13004C379E /* test.caf */,
 			);
 			name = libBaiduPush;
 			sourceTree = "<group>";
@@ -760,6 +785,7 @@
 		FE2E250C36AE50485B15CD25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18374BD91CAA9A5C004C379E /* libz.tbd */,
 				21A7B158FDEF9D065CBEEF64 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -826,6 +852,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18374BD81CAA9A13004C379E /* test.caf in Resources */,
 				184FF58C1CA8292C0075049D /* message@2x.png in Resources */,
 				18A34DFD1CA936DF009A33FD /* MyOtherInfoViewCell.xib in Resources */,
 				188D6C031CA9772D00DA4438 /* dropdown_loading_02@2x.png in Resources */,
@@ -837,6 +864,7 @@
 				18A34DD41CA91189009A33FD /* LaunchImage-4-568h@2x.png in Resources */,
 				184FF5891CA8292C0075049D /* me@2x.png in Resources */,
 				184FF58D1CA8292C0075049D /* message@3x.png in Resources */,
+				18374BEA1CAA9B66004C379E /* TheForgotView.xib in Resources */,
 				184FF54B1CA812E80075049D /* Localizable.strings in Resources */,
 				18A34D921CA8D1B2009A33FD /* notification@2x.png in Resources */,
 				18A34DDE1CA91E15009A33FD /* dot@2x.png in Resources */,
@@ -937,6 +965,8 @@
 				184FF5A71CA82A6D0075049D /* MeViewController.m in Sources */,
 				188D6BFC1CA9771600DA4438 /* MJFooterView.m in Sources */,
 				18A34D9F1CA8DE47009A33FD /* MeViewOtherCell.m in Sources */,
+				18374BE01CAA9AF7004C379E /* ForgotViewController.m in Sources */,
+				18374BE91CAA9B66004C379E /* TheForgotView.m in Sources */,
 				184FF5AD1CA82A930075049D /* ContactViewController.m in Sources */,
 				184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */,
 				18A34DE71CA92B15009A33FD /* MyInfoViewController.m in Sources */,
