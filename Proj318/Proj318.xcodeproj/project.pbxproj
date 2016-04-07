@@ -81,10 +81,19 @@
 		18A34DFC1CA936DF009A33FD /* MyOtherInfoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A34DFA1CA936DF009A33FD /* MyOtherInfoViewCell.m */; };
 		18A34DFD1CA936DF009A33FD /* MyOtherInfoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A34DFB1CA936DF009A33FD /* MyOtherInfoViewCell.xib */; };
 		18A34DFF1CA936FC009A33FD /* MyDetailInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A34DFE1CA936FC009A33FD /* MyDetailInfoView.xib */; };
-		B9FA52236ACC107FBE8E0BFA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A7B158FDEF9D065CBEEF64 /* libPods.a */; };
+		47F7C7FD1CB5F1F9004D8031 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C7FC1CB5F1F9004D8031 /* MobileCoreServices.framework */; };
+		47F7C7FF1CB5F203004D8031 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C7FE1CB5F203004D8031 /* CFNetwork.framework */; };
+		47F7C8011CB5F23A004D8031 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8001CB5F23A004D8031 /* libsqlite3.tbd */; };
+		47F7C8031CB5F244004D8031 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8021CB5F244004D8031 /* libstdc++.6.0.9.tbd */; };
+		47F7C8051CB5F257004D8031 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8041CB5F257004D8031 /* libiconv.tbd */; };
+		47F7C8071CB5F269004D8031 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8061CB5F269004D8031 /* libresolv.tbd */; };
+		47F7C8091CB5F274004D8031 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8081CB5F274004D8031 /* libxml2.tbd */; };
+		7B53CAD5ED40D16733DDA8A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228E096EF92E8A1FB0FC7F0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0228E096EF92E8A1FB0FC7F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		18374BD41CAA9A13004C379E /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPush.h; path = Vendor/libBaiduPush/BPush.h; sourceTree = "<group>"; };
 		18374BD51CAA9A13004C379E /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBPush.a; path = Vendor/libBaiduPush/libBPush.a; sourceTree = "<group>"; };
 		18374BD61CAA9A13004C379E /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.caf; path = Vendor/libBaiduPush/test.caf; sourceTree = "<group>"; };
@@ -192,9 +201,14 @@
 		18A34DFA1CA936DF009A33FD /* MyOtherInfoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOtherInfoViewCell.m; path = MeView/View/MyOtherInfoViewCell.m; sourceTree = "<group>"; };
 		18A34DFB1CA936DF009A33FD /* MyOtherInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyOtherInfoViewCell.xib; path = MeView/View/MyOtherInfoViewCell.xib; sourceTree = "<group>"; };
 		18A34DFE1CA936FC009A33FD /* MyDetailInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyDetailInfoView.xib; path = MeView/View/MyDetailInfoView.xib; sourceTree = "<group>"; };
-		21A7B158FDEF9D065CBEEF64 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1A837CBF9D30F53329D3222 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		A6A03B1508AEE56E3F9BE825 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		47F7C7FC1CB5F1F9004D8031 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		47F7C7FE1CB5F203004D8031 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		47F7C8001CB5F23A004D8031 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		47F7C8021CB5F244004D8031 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		47F7C8041CB5F257004D8031 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		47F7C8061CB5F269004D8031 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		47F7C8081CB5F274004D8031 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,9 +216,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F7C8091CB5F274004D8031 /* libxml2.tbd in Frameworks */,
+				47F7C8071CB5F269004D8031 /* libresolv.tbd in Frameworks */,
+				47F7C8051CB5F257004D8031 /* libiconv.tbd in Frameworks */,
+				47F7C8031CB5F244004D8031 /* libstdc++.6.0.9.tbd in Frameworks */,
+				47F7C8011CB5F23A004D8031 /* libsqlite3.tbd in Frameworks */,
+				47F7C7FF1CB5F203004D8031 /* CFNetwork.framework in Frameworks */,
+				47F7C7FD1CB5F1F9004D8031 /* MobileCoreServices.framework in Frameworks */,
 				18374BDA1CAA9A5C004C379E /* libz.tbd in Frameworks */,
 				18374BD71CAA9A13004C379E /* libBPush.a in Frameworks */,
-				B9FA52236ACC107FBE8E0BFA /* libPods.a in Frameworks */,
+				7B53CAD5ED40D16733DDA8A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +238,7 @@
 				184FF4E51CA78EC30075049D /* Proj318 */,
 				184FF4E41CA78EC30075049D /* Products */,
 				FE2E250C36AE50485B15CD25 /* Frameworks */,
-				93987F5D117A947F15E24FA4 /* Pods */,
+				6F154F64C6E83B3B7333FF8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -788,11 +809,11 @@
 			name = btn;
 			sourceTree = "<group>";
 		};
-		93987F5D117A947F15E24FA4 /* Pods */ = {
+		6F154F64C6E83B3B7333FF8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A6A03B1508AEE56E3F9BE825 /* Pods.debug.xcconfig */,
-				A1A837CBF9D30F53329D3222 /* Pods.release.xcconfig */,
+				0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */,
+				A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -800,8 +821,15 @@
 		FE2E250C36AE50485B15CD25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47F7C8081CB5F274004D8031 /* libxml2.tbd */,
+				47F7C8061CB5F269004D8031 /* libresolv.tbd */,
+				47F7C8041CB5F257004D8031 /* libiconv.tbd */,
+				47F7C8021CB5F244004D8031 /* libstdc++.6.0.9.tbd */,
+				47F7C8001CB5F23A004D8031 /* libsqlite3.tbd */,
+				47F7C7FE1CB5F203004D8031 /* CFNetwork.framework */,
+				47F7C7FC1CB5F1F9004D8031 /* MobileCoreServices.framework */,
 				18374BD91CAA9A5C004C379E /* libz.tbd */,
-				21A7B158FDEF9D065CBEEF64 /* libPods.a */,
+				0228E096EF92E8A1FB0FC7F0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -813,12 +841,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184FF4FA1CA78EC30075049D /* Build configuration list for PBXNativeTarget "Proj318" */;
 			buildPhases = (
-				B1B91E77C54D010896D52FCF /* Check Pods Manifest.lock */,
+				01A80658E30A084B30FD28E7 /* Check Pods Manifest.lock */,
 				184FF4DF1CA78EC30075049D /* Sources */,
 				184FF4E01CA78EC30075049D /* Frameworks */,
 				184FF4E11CA78EC30075049D /* Resources */,
-				38F06E06C31BF62CD0CEE2B4 /* Embed Pods Frameworks */,
-				3DADD09D558701AC1D19B46F /* Copy Pods Resources */,
+				109A01BE54B37C8DB8987008 /* Embed Pods Frameworks */,
+				CF950ECD0D72D5BA0A97FEA9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -916,7 +944,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38F06E06C31BF62CD0CEE2B4 /* Embed Pods Frameworks */ = {
+		01A80658E30A084B30FD28E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		109A01BE54B37C8DB8987008 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -931,7 +974,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3DADD09D558701AC1D19B46F /* Copy Pods Resources */ = {
+		CF950ECD0D72D5BA0A97FEA9 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -944,21 +987,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B1B91E77C54D010896D52FCF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1099,7 +1127,7 @@
 		};
 		184FF4FB1CA78EC30075049D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6A03B1508AEE56E3F9BE825 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -1118,7 +1146,7 @@
 		};
 		184FF4FC1CA78EC30075049D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1A837CBF9D30F53329D3222 /* Pods.release.xcconfig */;
+			baseConfigurationReference = A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";

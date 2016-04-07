@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "EaseMobSDK/EaseMobSDK/resources/EaseMob.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "SSCheckBoxView/SSCheckBoxView/SSCheckBoxView/Graphics/cb_box_off.png"
   install_resource "SSCheckBoxView/SSCheckBoxView/SSCheckBoxView/Graphics/cb_box_off@2x.png"
@@ -81,6 +82,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "SSCheckBoxView/SSCheckBoxView/SSCheckBoxView/Graphics/cb_mono_on@2x.png"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "EaseMobSDK/EaseMobSDK/resources/EaseMob.bundle"
   install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "SSCheckBoxView/SSCheckBoxView/SSCheckBoxView/Graphics/cb_box_off.png"
   install_resource "SSCheckBoxView/SSCheckBoxView/SSCheckBoxView/Graphics/cb_box_off@2x.png"
