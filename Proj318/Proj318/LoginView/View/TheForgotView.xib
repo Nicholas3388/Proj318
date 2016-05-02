@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,43 +11,73 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrZ-3p-Gpg">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrZ-3p-Gpg">
                     <rect key="frame" x="8" y="143" width="86" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Verif Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sye-RG-fww">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Verif Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sye-RG-fww">
                     <rect key="frame" x="8" y="195" width="86" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-av-Fwe">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-av-Fwe">
                     <rect key="frame" x="94" y="139" width="136" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-Nl-yn6">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-Nl-yn6">
                     <rect key="frame" x="94" y="191" width="136" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUn-dh-bb2">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUn-dh-bb2">
                     <rect key="frame" x="30" y="280" width="260" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Z2U-vR-X6r"/>
+                        <constraint firstAttribute="width" constant="260" id="oYT-FT-ipu"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="DONE">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2u-rl-D9B">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2u-rl-D9B">
                     <rect key="frame" x="238" y="191" width="74" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="7CO-Qz-qb6"/>
+                        <constraint firstAttribute="height" constant="30" id="Lc3-4y-7Ck"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Get"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sye-RG-fww" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="0hI-q8-Hut"/>
+                <constraint firstItem="2IU-av-Fwe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="139" id="2Xs-6X-X37"/>
+                <constraint firstItem="vrZ-3p-Gpg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="143" id="87o-WH-MDS"/>
+                <constraint firstItem="vrZ-3p-Gpg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="8IU-Uq-fSX"/>
+                <constraint firstItem="V2u-rl-D9B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="191" id="CmS-Kn-5iB"/>
+                <constraint firstItem="V2u-rl-D9B" firstAttribute="leading" secondItem="jmc-Nl-yn6" secondAttribute="trailing" constant="8" id="DSv-2G-ESU"/>
+                <constraint firstItem="BUn-dh-bb2" firstAttribute="top" secondItem="jmc-Nl-yn6" secondAttribute="bottom" constant="59" id="ceE-hl-lym"/>
+                <constraint firstItem="2IU-av-Fwe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="94" id="dQx-m0-zKi"/>
+                <constraint firstItem="jmc-Nl-yn6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="94" id="eGS-Hf-Epy"/>
+                <constraint firstAttribute="trailing" secondItem="V2u-rl-D9B" secondAttribute="trailing" constant="8" id="gcI-Bp-HhZ"/>
+                <constraint firstItem="BUn-dh-bb2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qsS-5I-wtX"/>
+                <constraint firstItem="jmc-Nl-yn6" firstAttribute="top" secondItem="2IU-av-Fwe" secondAttribute="bottom" constant="22" id="tdN-ls-hVc"/>
+                <constraint firstItem="sye-RG-fww" firstAttribute="top" secondItem="vrZ-3p-Gpg" secondAttribute="bottom" constant="31" id="uh7-47-clH"/>
+                <constraint firstAttribute="trailing" secondItem="2IU-av-Fwe" secondAttribute="trailing" constant="90" id="ve0-Yf-He6"/>
+                <constraint firstAttribute="trailing" secondItem="jmc-Nl-yn6" secondAttribute="trailing" constant="90" id="yY9-TD-ux1"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="yY9-TD-ux1"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="doneButton" destination="BUn-dh-bb2" id="B9t-bj-pf4"/>
                 <outlet property="getVerifCodeButton" destination="V2u-rl-D9B" id="9V8-t9-3cE"/>

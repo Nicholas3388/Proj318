@@ -39,6 +39,8 @@
 #pragma mark - layout setup
 - (void)layout {
     _startView = [TheStartView instanceView];
+    // stretch to fill the screen
+    _startView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:_startView];
     
     [_startView.loginButton addTarget:self action:@selector(onLoginButtonTouched) forControlEvents:UIControlEventTouchUpInside];

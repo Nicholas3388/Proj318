@@ -49,8 +49,8 @@
     self.title = NSLocalizedString(@"kForgot", nil);
     
     _forgotView = [TheForgotView instanceView];
+    _forgotView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:_forgotView];
-    
     
 }
 

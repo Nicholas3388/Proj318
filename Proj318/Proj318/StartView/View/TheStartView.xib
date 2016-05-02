@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,18 +11,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginView.png" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-i5-sgH">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginView.png" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-i5-sgH">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="012-Rz-j7h">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="012-Rz-j7h">
                     <rect key="frame" x="30" y="393" width="260" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="2Xp-hg-ndk"/>
+                        <constraint firstAttribute="width" constant="260" id="BO5-1F-Ieg"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="REGISTER">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-xH-5b8">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-xH-5b8">
                     <rect key="frame" x="30" y="461" width="260" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="jxT-Cc-ZdZ"/>
+                        <constraint firstAttribute="width" constant="260" id="nKL-PK-oIb"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <state key="normal" title="LOGIN">
                         <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,6 +38,16 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fOS-i5-sgH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1sj-Of-FCK"/>
+                <constraint firstItem="fOS-i5-sgH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8z1-C3-nXZ"/>
+                <constraint firstAttribute="trailing" secondItem="fOS-i5-sgH" secondAttribute="trailing" id="Lvw-AH-doh"/>
+                <constraint firstAttribute="bottom" secondItem="fOS-i5-sgH" secondAttribute="bottom" id="R6G-k9-Nx7"/>
+                <constraint firstItem="012-Rz-j7h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="anW-Vh-wx2"/>
+                <constraint firstItem="Xfq-xH-5b8" firstAttribute="top" secondItem="012-Rz-j7h" secondAttribute="bottom" constant="26" id="bIp-XT-UbT"/>
+                <constraint firstItem="Xfq-xH-5b8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dwd-HG-voA"/>
+                <constraint firstItem="012-Rz-j7h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="393" id="jKa-DU-Q49"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="loginButton" destination="Xfq-xH-5b8" id="1G7-HK-49T"/>

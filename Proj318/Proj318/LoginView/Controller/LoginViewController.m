@@ -46,6 +46,7 @@
     self.title = NSLocalizedString(@"kLogin", nil);
     
     _loginView = [TheLoginView instanceView];
+    _loginView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:_loginView];
     
     [_loginView.loginButton addTarget:self action:@selector(onLogin) forControlEvents:UIControlEventTouchUpInside];
