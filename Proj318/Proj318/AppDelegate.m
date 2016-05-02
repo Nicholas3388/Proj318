@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "GuideView.h"
 #import "BPush.h"
+#import "TuSDKFramework.h"
 #import <EaseMobSDK/EaseMob.h>
 
 static BOOL isBackGroundActivateApplication;
@@ -66,6 +67,10 @@ static BOOL isBackGroundActivateApplication;
     [[EaseMob sharedInstance] registerSDKWithAppKey:@"project318#proj318" apnsCertName:@"istore_dev" otherConfig:@{kSDKConfigEnableConsoleLogger:@NO}];
     
     [[EaseMob sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    //////////////////////////
+    // integrade TuSDK
+    [TuSDK initSdkWithAppKey:@"a7ee3a9a43c95923-00-9f6po1"];
     
     return YES;
 }

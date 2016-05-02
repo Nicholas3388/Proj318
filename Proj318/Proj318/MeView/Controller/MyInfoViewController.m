@@ -9,6 +9,7 @@
 #import "MyInfoViewController.h"
 #import "MyDetailInfoView.h"
 #import "MyOtherInfoViewCell.h"
+#import "ChangePortraitViewController.h"
 
 @implementation MyInfoViewController {
     // private
@@ -49,6 +50,18 @@
     _headView.portrait.layer.cornerRadius = _headView.portrait.frame.size.width/2.0;
     _headView.portrait.clipsToBounds = YES;
     [self.view addSubview:_headView];
+    
+    // add click event handler
+    _headView.portrait.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(portraitClicked:)];
+    [_headView.portrait addGestureRecognizer:tapGesture];
+}
+
+#pragma mark - portrait clicked
+- (void)portraitClicked:(UITapGestureRecognizer *)recognizer {
+    ChangePortraitViewController *viewController = [[ChangePortraitViewController alloc]init];
+    [self.navigationController pushViewController:viewController animated:YES];
+    NSLog(@"portrait click");
 }
 
 #pragma mark - table view delegate

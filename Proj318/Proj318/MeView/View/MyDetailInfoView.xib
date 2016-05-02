@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,15 +11,37 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aP-5I-AXA">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aP-5I-AXA">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="9ad-pg-8Pt"/>
+                        <constraint firstAttribute="width" constant="320" id="LLd-ce-rgn"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9ad-pg-8Pt"/>
+                            <exclude reference="LLd-ce-rgn"/>
+                        </mask>
+                    </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orn_man02.png" translatesAutoresizingMaskIntoConstraints="NO" id="bCc-yh-u3J">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orn_man02.png" translatesAutoresizingMaskIntoConstraints="NO" id="bCc-yh-u3J">
                     <rect key="frame" x="120" y="20" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="5wQ-KV-Nzu"/>
+                        <constraint firstAttribute="height" constant="80" id="RRg-gm-1pX"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2aP-5I-AXA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9ry-wT-znj"/>
+                <constraint firstItem="bCc-yh-u3J" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jfy-0n-9nP"/>
+                <constraint firstItem="2aP-5I-AXA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mts-R0-7m5"/>
+                <constraint firstAttribute="trailing" secondItem="2aP-5I-AXA" secondAttribute="trailing" id="hkw-z6-wcK"/>
+                <constraint firstAttribute="bottom" secondItem="2aP-5I-AXA" secondAttribute="bottom" id="jLj-yg-Kxq"/>
+                <constraint firstItem="bCc-yh-u3J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="yUF-9b-5u6"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="portrait" destination="bCc-yh-u3J" id="z5l-Qq-828"/>

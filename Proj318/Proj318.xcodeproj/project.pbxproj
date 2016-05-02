@@ -16,6 +16,14 @@
 		18374BF01CAAC657004C379E /* PrivateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BEF1CAAC657004C379E /* PrivateViewController.m */; };
 		18374BF91CAAC88C004C379E /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BF81CAAC88C004C379E /* NotificationViewController.m */; };
 		18374BFF1CAAC90A004C379E /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18374BFE1CAAC90A004C379E /* AccountViewController.m */; };
+		18432FDE1CD78F2F00E5D225 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18432FDA1CD78F2F00E5D225 /* GPUImage.framework */; };
+		18432FDF1CD78F2F00E5D225 /* TuSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18432FDB1CD78F2F00E5D225 /* TuSDK.bundle */; };
+		18432FE01CD78F2F00E5D225 /* TuSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18432FDC1CD78F2F00E5D225 /* TuSDK.framework */; };
+		18432FE11CD78F2F00E5D225 /* TuSDKGeeV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18432FDD1CD78F2F00E5D225 /* TuSDKGeeV1.framework */; };
+		18432FE51CD7991400E5D225 /* ChangePortraitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18432FE41CD7991400E5D225 /* ChangePortraitViewController.m */; };
+		18432FEA1CD7999C00E5D225 /* SimpleCameraComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18432FE71CD7999C00E5D225 /* SimpleCameraComponent.m */; };
+		18432FEB1CD7999C00E5D225 /* SimpleEditMultipleComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18432FE91CD7999C00E5D225 /* SimpleEditMultipleComponent.m */; };
+		18432FEE1CD799C100E5D225 /* DemoSimpleBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 18432FED1CD799C100E5D225 /* DemoSimpleBase.m */; };
 		184FF4E81CA78EC30075049D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4E71CA78EC30075049D /* main.m */; };
 		184FF4EB1CA78EC30075049D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184FF4EA1CA78EC30075049D /* AppDelegate.m */; };
 		184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184FF4F21CA78EC30075049D /* Assets.xcassets */; };
@@ -88,12 +96,11 @@
 		47F7C8051CB5F257004D8031 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8041CB5F257004D8031 /* libiconv.tbd */; };
 		47F7C8071CB5F269004D8031 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8061CB5F269004D8031 /* libresolv.tbd */; };
 		47F7C8091CB5F274004D8031 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F7C8081CB5F274004D8031 /* libxml2.tbd */; };
-		7B53CAD5ED40D16733DDA8A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0228E096EF92E8A1FB0FC7F0 /* libPods.a */; };
+		FBE72162D56EA7381DC4D8FD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7795F7571B4ACE2D8631181 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0228E096EF92E8A1FB0FC7F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		10C9B4D2D7A49C768B7E7EC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		18374BD41CAA9A13004C379E /* BPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPush.h; path = Vendor/libBaiduPush/BPush.h; sourceTree = "<group>"; };
 		18374BD51CAA9A13004C379E /* libBPush.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBPush.a; path = Vendor/libBaiduPush/libBPush.a; sourceTree = "<group>"; };
 		18374BD61CAA9A13004C379E /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.caf; path = Vendor/libBaiduPush/test.caf; sourceTree = "<group>"; };
@@ -109,6 +116,19 @@
 		18374BF81CAAC88C004C379E /* NotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotificationViewController.m; path = MeView/Controller/NotificationViewController.m; sourceTree = "<group>"; };
 		18374BFD1CAAC90A004C379E /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountViewController.h; path = MeView/Controller/AccountViewController.h; sourceTree = "<group>"; };
 		18374BFE1CAAC90A004C379E /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountViewController.m; path = MeView/Controller/AccountViewController.m; sourceTree = "<group>"; };
+		18432FDA1CD78F2F00E5D225 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = Vendor/libTuSDK/GPUImage.framework; sourceTree = "<group>"; };
+		18432FDB1CD78F2F00E5D225 /* TuSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TuSDK.bundle; path = Vendor/libTuSDK/TuSDK.bundle; sourceTree = "<group>"; };
+		18432FDC1CD78F2F00E5D225 /* TuSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TuSDK.framework; path = Vendor/libTuSDK/TuSDK.framework; sourceTree = "<group>"; };
+		18432FDD1CD78F2F00E5D225 /* TuSDKGeeV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TuSDKGeeV1.framework; path = Vendor/libTuSDK/TuSDKGeeV1.framework; sourceTree = "<group>"; };
+		18432FE21CD794E300E5D225 /* TuSDKFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuSDKFramework.h; path = Includes/TuSDKFramework.h; sourceTree = "<group>"; };
+		18432FE31CD7991400E5D225 /* ChangePortraitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePortraitViewController.h; path = MeView/Controller/ChangePortraitViewController.h; sourceTree = "<group>"; };
+		18432FE41CD7991400E5D225 /* ChangePortraitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePortraitViewController.m; path = MeView/Controller/ChangePortraitViewController.m; sourceTree = "<group>"; };
+		18432FE61CD7999C00E5D225 /* SimpleCameraComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleCameraComponent.h; path = MeView/Controller/SimpleCameraComponent.h; sourceTree = "<group>"; };
+		18432FE71CD7999C00E5D225 /* SimpleCameraComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleCameraComponent.m; path = MeView/Controller/SimpleCameraComponent.m; sourceTree = "<group>"; };
+		18432FE81CD7999C00E5D225 /* SimpleEditMultipleComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimpleEditMultipleComponent.h; path = MeView/Controller/SimpleEditMultipleComponent.h; sourceTree = "<group>"; };
+		18432FE91CD7999C00E5D225 /* SimpleEditMultipleComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimpleEditMultipleComponent.m; path = MeView/Controller/SimpleEditMultipleComponent.m; sourceTree = "<group>"; };
+		18432FEC1CD799C100E5D225 /* DemoSimpleBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoSimpleBase.h; path = MeView/Controller/DemoSimpleBase.h; sourceTree = "<group>"; };
+		18432FED1CD799C100E5D225 /* DemoSimpleBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoSimpleBase.m; path = MeView/Controller/DemoSimpleBase.m; sourceTree = "<group>"; };
 		184FF4E31CA78EC30075049D /* Proj318.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proj318.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		184FF4E71CA78EC30075049D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		184FF4E91CA78EC30075049D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -201,6 +221,7 @@
 		18A34DFA1CA936DF009A33FD /* MyOtherInfoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyOtherInfoViewCell.m; path = MeView/View/MyOtherInfoViewCell.m; sourceTree = "<group>"; };
 		18A34DFB1CA936DF009A33FD /* MyOtherInfoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyOtherInfoViewCell.xib; path = MeView/View/MyOtherInfoViewCell.xib; sourceTree = "<group>"; };
 		18A34DFE1CA936FC009A33FD /* MyDetailInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyDetailInfoView.xib; path = MeView/View/MyDetailInfoView.xib; sourceTree = "<group>"; };
+		26353202A0E079B7BAD9065E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		47F7C7FC1CB5F1F9004D8031 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		47F7C7FE1CB5F203004D8031 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		47F7C8001CB5F23A004D8031 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -208,7 +229,7 @@
 		47F7C8041CB5F257004D8031 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		47F7C8061CB5F269004D8031 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		47F7C8081CB5F274004D8031 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
-		A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E7795F7571B4ACE2D8631181 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,25 +241,48 @@
 				47F7C8071CB5F269004D8031 /* libresolv.tbd in Frameworks */,
 				47F7C8051CB5F257004D8031 /* libiconv.tbd in Frameworks */,
 				47F7C8031CB5F244004D8031 /* libstdc++.6.0.9.tbd in Frameworks */,
+				18432FE11CD78F2F00E5D225 /* TuSDKGeeV1.framework in Frameworks */,
 				47F7C8011CB5F23A004D8031 /* libsqlite3.tbd in Frameworks */,
 				47F7C7FF1CB5F203004D8031 /* CFNetwork.framework in Frameworks */,
+				18432FDE1CD78F2F00E5D225 /* GPUImage.framework in Frameworks */,
 				47F7C7FD1CB5F1F9004D8031 /* MobileCoreServices.framework in Frameworks */,
 				18374BDA1CAA9A5C004C379E /* libz.tbd in Frameworks */,
 				18374BD71CAA9A13004C379E /* libBPush.a in Frameworks */,
-				7B53CAD5ED40D16733DDA8A0 /* libPods.a in Frameworks */,
+				18432FE01CD78F2F00E5D225 /* TuSDK.framework in Frameworks */,
+				FBE72162D56EA7381DC4D8FD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177A0A8CB107652C5006C363 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10C9B4D2D7A49C768B7E7EC7 /* Pods.debug.xcconfig */,
+				26353202A0E079B7BAD9065E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		18432FD91CD78F1D00E5D225 /* libTuSDK */ = {
+			isa = PBXGroup;
+			children = (
+				18432FDA1CD78F2F00E5D225 /* GPUImage.framework */,
+				18432FDB1CD78F2F00E5D225 /* TuSDK.bundle */,
+				18432FDC1CD78F2F00E5D225 /* TuSDK.framework */,
+				18432FDD1CD78F2F00E5D225 /* TuSDKGeeV1.framework */,
+			);
+			name = libTuSDK;
+			sourceTree = "<group>";
+		};
 		184FF4DA1CA78EC30075049D = {
 			isa = PBXGroup;
 			children = (
 				184FF4E51CA78EC30075049D /* Proj318 */,
 				184FF4E41CA78EC30075049D /* Products */,
 				FE2E250C36AE50485B15CD25 /* Frameworks */,
-				6F154F64C6E83B3B7333FF8C /* Pods */,
+				177A0A8CB107652C5006C363 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -578,6 +622,14 @@
 		184FF5951CA829DE0075049D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18432FEC1CD799C100E5D225 /* DemoSimpleBase.h */,
+				18432FED1CD799C100E5D225 /* DemoSimpleBase.m */,
+				18432FE61CD7999C00E5D225 /* SimpleCameraComponent.h */,
+				18432FE71CD7999C00E5D225 /* SimpleCameraComponent.m */,
+				18432FE81CD7999C00E5D225 /* SimpleEditMultipleComponent.h */,
+				18432FE91CD7999C00E5D225 /* SimpleEditMultipleComponent.m */,
+				18432FE31CD7991400E5D225 /* ChangePortraitViewController.h */,
+				18432FE41CD7991400E5D225 /* ChangePortraitViewController.m */,
 				18374BFD1CAAC90A004C379E /* AccountViewController.h */,
 				18374BFE1CAAC90A004C379E /* AccountViewController.m */,
 				18374BF71CAAC88C004C379E /* NotificationViewController.h */,
@@ -749,6 +801,7 @@
 		18A34DB71CA90E36009A33FD /* Includes */ = {
 			isa = PBXGroup;
 			children = (
+				18432FE21CD794E300E5D225 /* TuSDKFramework.h */,
 				18A34DB91CA90E79009A33FD /* AppConfig.h */,
 			);
 			name = Includes;
@@ -757,6 +810,7 @@
 		18A34DBD1CA90F72009A33FD /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				18432FD91CD78F1D00E5D225 /* libTuSDK */,
 				18A34DBE1CA90F85009A33FD /* libBaiduPush */,
 			);
 			name = Vendor;
@@ -809,15 +863,6 @@
 			name = btn;
 			sourceTree = "<group>";
 		};
-		6F154F64C6E83B3B7333FF8C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */,
-				A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		FE2E250C36AE50485B15CD25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,7 +874,7 @@
 				47F7C7FE1CB5F203004D8031 /* CFNetwork.framework */,
 				47F7C7FC1CB5F1F9004D8031 /* MobileCoreServices.framework */,
 				18374BD91CAA9A5C004C379E /* libz.tbd */,
-				0228E096EF92E8A1FB0FC7F0 /* libPods.a */,
+				E7795F7571B4ACE2D8631181 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -841,12 +886,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 184FF4FA1CA78EC30075049D /* Build configuration list for PBXNativeTarget "Proj318" */;
 			buildPhases = (
-				01A80658E30A084B30FD28E7 /* Check Pods Manifest.lock */,
+				10DE508AF3E2ECC3587A685C /* Check Pods Manifest.lock */,
 				184FF4DF1CA78EC30075049D /* Sources */,
 				184FF4E01CA78EC30075049D /* Frameworks */,
 				184FF4E11CA78EC30075049D /* Resources */,
-				109A01BE54B37C8DB8987008 /* Embed Pods Frameworks */,
-				CF950ECD0D72D5BA0A97FEA9 /* Copy Pods Resources */,
+				19C2BAF7AE6E1CE8FE4D5489 /* Embed Pods Frameworks */,
+				45A5C609611C62B2893B5E99 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -898,6 +943,7 @@
 				18374BD81CAA9A13004C379E /* test.caf in Resources */,
 				184FF58C1CA8292C0075049D /* message@2x.png in Resources */,
 				18A34DFD1CA936DF009A33FD /* MyOtherInfoViewCell.xib in Resources */,
+				18432FDF1CD78F2F00E5D225 /* TuSDK.bundle in Resources */,
 				188D6C031CA9772D00DA4438 /* dropdown_loading_02@2x.png in Resources */,
 				184FF4F31CA78EC30075049D /* Assets.xcassets in Resources */,
 				18A34D911CA8D1B2009A33FD /* feedback@2x.png in Resources */,
@@ -944,7 +990,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01A80658E30A084B30FD28E7 /* Check Pods Manifest.lock */ = {
+		10DE508AF3E2ECC3587A685C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -959,7 +1005,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		109A01BE54B37C8DB8987008 /* Embed Pods Frameworks */ = {
+		19C2BAF7AE6E1CE8FE4D5489 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -974,7 +1020,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CF950ECD0D72D5BA0A97FEA9 /* Copy Pods Resources */ = {
+		45A5C609611C62B2893B5E99 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1003,19 +1049,23 @@
 				18A34D871CA8B86C009A33FD /* MeViewCell.m in Sources */,
 				184FF4E81CA78EC30075049D /* main.m in Sources */,
 				184FF55D1CA81CB20075049D /* RegisterViewController.m in Sources */,
+				18432FEB1CD7999C00E5D225 /* SimpleEditMultipleComponent.m in Sources */,
 				184FF5B01CA82A9D0075049D /* MessageViewController.m in Sources */,
 				18A34DAE1CA90977009A33FD /* TodoTableViewCell.m in Sources */,
 				184FF5A71CA82A6D0075049D /* MeViewController.m in Sources */,
 				188D6BFC1CA9771600DA4438 /* MJFooterView.m in Sources */,
 				18A34D9F1CA8DE47009A33FD /* MeViewOtherCell.m in Sources */,
 				18374BE01CAA9AF7004C379E /* ForgotViewController.m in Sources */,
+				18432FE51CD7991400E5D225 /* ChangePortraitViewController.m in Sources */,
 				18374BE91CAA9B66004C379E /* TheForgotView.m in Sources */,
 				184FF5AD1CA82A930075049D /* ContactViewController.m in Sources */,
 				184FF56B1CA81D540075049D /* TheRegisterView.m in Sources */,
+				18432FEE1CD799C100E5D225 /* DemoSimpleBase.m in Sources */,
 				18A34DE71CA92B15009A33FD /* MyInfoViewController.m in Sources */,
 				184FF5361CA80E590075049D /* StartViewController.m in Sources */,
 				184FF52A1CA7F9160075049D /* TheLoginView.m in Sources */,
 				184FF5061CA79C640075049D /* LoginViewController.m in Sources */,
+				18432FEA1CD7999C00E5D225 /* SimpleCameraComponent.m in Sources */,
 				184FF5AA1CA82A780075049D /* TodoViewController.m in Sources */,
 				18374BF91CAAC88C004C379E /* NotificationViewController.m in Sources */,
 				18A34DF01CA9302A009A33FD /* MyDetailInfoView.m in Sources */,
@@ -1127,11 +1177,15 @@
 		};
 		184FF4FB1CA78EC30075049D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ECADAB1913482ED89C0720E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 10C9B4D2D7A49C768B7E7EC7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Proj318/Vendor/libTuSDK",
+				);
 				INFOPLIST_FILE = Proj318/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1146,11 +1200,15 @@
 		};
 		184FF4FC1CA78EC30075049D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6BA2AFD6A20340E24F270B3 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 26353202A0E079B7BAD9065E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Proj318/Vendor/libTuSDK",
+				);
 				INFOPLIST_FILE = Proj318/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

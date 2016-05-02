@@ -20,9 +20,9 @@ PODS:
   - QuickDialog (1.1.0):
     - QuickDialog/Core (= 1.1.0)
   - QuickDialog/Core (1.1.0)
-  - SDWebImage (3.7.4):
-    - SDWebImage/Core (= 3.7.4)
-  - SDWebImage/Core (3.7.4)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
   - SSCheckBoxView (0.0.1)
 
 DEPENDENCIES:
@@ -49,7 +49,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: fafde8f18f4afd66b434331a9beb67a6c0264056
   QuickDialog: 6954450c4c2d003a89fbfee48ec8fa4695436b01
-  SDWebImage: 247edd7dd80dd6124197b0d6a17846fe9d1df968
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   SSCheckBoxView: bd0d5f17f87114b9f09de4041e8cdcb1c097f69a
 
 COCOAPODS: 0.39.0
