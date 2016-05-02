@@ -150,6 +150,7 @@
                 
                 cell.icon.image = [UIImage imageNamed:@"feedback"];
                 cell.content.text = NSLocalizedString(@"kLogout", nil);
+                cell.content.textColor = [UIColor redColor];
             }
             
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -236,7 +237,7 @@
 
 #pragma mark - UIActionSheet delegate
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 1) {
+    if (buttonIndex == 0) {
         [Tools setStartViewController];
     }
 }
