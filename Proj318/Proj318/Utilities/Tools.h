@@ -12,4 +12,8 @@
 
 + (void)setStartViewController;
 
++ (void)setDesc:(NSString *)desc;
+
++ (NSString *)getDesc;
+
 @end

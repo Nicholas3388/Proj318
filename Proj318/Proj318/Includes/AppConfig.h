@@ -25,4 +25,6 @@
 
 #define isIPhone6 (ScreenWidth == 667.0)
 
+#define DEVICE_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
 #endif /* AppConfig_h */

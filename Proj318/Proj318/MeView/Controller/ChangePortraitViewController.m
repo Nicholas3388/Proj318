@@ -52,8 +52,7 @@
 
 #pragma mark - setup
 - (void)setUpNav {
-    self.title = @"修改头像";
-    
+    self.title = NSLocalizedString(@"kChangePortrait", nil);
     
     [[TuSDKTKLocation shared] requireAuthorWithController:self];
     NSLog(@"Filter manager init");
@@ -82,7 +81,7 @@
     UIButton *changeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     changeButton.frame = CGRectMake(0, 0, ScreenWidth-40, 36);
     changeButton.center = CGPointMake(ScreenWidth*0.5, ScreenHeight-26);
-    [changeButton setTitle:@"更改头像" forState:UIControlStateNormal];
+    [changeButton setTitle:NSLocalizedString(@"kChangePortrait", nil) forState:UIControlStateNormal];
     changeButton.backgroundColor = [UIColor whiteColor];
     changeButton.titleLabel.textColor = [UIColor blackColor];
     [changeButton addTarget:self action:@selector(changeButtonClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -91,7 +90,7 @@
     UIButton *cameraButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     cameraButton.frame = CGRectMake(0, 0, changeButton.frame.size.width, changeButton.frame.size.height);
     cameraButton.center = CGPointMake(ScreenWidth*0.5, changeButton.center.y-42);
-    [cameraButton setTitle:@"拍照" forState:UIControlStateNormal];
+    [cameraButton setTitle:NSLocalizedString(@"kTakeAPhoto", nil) forState:UIControlStateNormal];
     cameraButton.backgroundColor = [UIColor whiteColor];
     cameraButton.titleLabel.textColor = [UIColor blackColor];
     [cameraButton addTarget:self action:@selector(cameraButtonClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -100,7 +99,7 @@
     UIButton *saveButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     saveButton.frame = CGRectMake(0, 0, changeButton.frame.size.width, changeButton.frame.size.height);
     saveButton.center = CGPointMake(ScreenWidth*0.5, cameraButton.center.y-42);
-    [saveButton setTitle:@"保存图片" forState:UIControlStateNormal];
+    [saveButton setTitle:NSLocalizedString(@"kSavePortrait", nil) forState:UIControlStateNormal];
     saveButton.backgroundColor = [UIColor whiteColor];
     saveButton.titleLabel.textColor = [UIColor blackColor];
     [saveButton addTarget:self action:@selector(saveButtonClicked) forControlEvents:UIControlEventTouchUpInside];

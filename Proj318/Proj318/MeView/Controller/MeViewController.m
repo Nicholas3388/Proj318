@@ -18,6 +18,7 @@
 
 #import "QRootElement.h"
 #import "QTextElement.h"
+#import "QBooleanElement.h"
 
 @implementation MeViewController {
     UITableView *_tableView;
@@ -196,14 +197,14 @@
                     break;
                 case 1:
                 {
-                    NotificationViewController *nvc = [[NotificationViewController alloc]init];
-                    [self.navigationController pushViewController:nvc animated:YES];
+                    NotificationViewController *nvc = [self createNotificationView];
+                    [self presentModalViewController:nvc animated:YES];
                 }
                     break;
                 case 2:
                 {
-                    PrivateViewController *pvc = [[PrivateViewController alloc]init];
-                    [self.navigationController pushViewController:pvc animated:YES];
+                    PrivateViewController *pvc = [self createPrivateView];
+                    [self presentModalViewController:pvc animated:YES];
                 }
                     break;
                 default:
@@ -233,6 +234,69 @@
         default:
             break;
     }
+}
+
+#pragma mark - create notification view
+- (NotificationViewController *)createNotificationView {
+    QRootElement *root = [[QRootElement alloc] init];
+    root.title = NSLocalizedString(@"kNotificationText", nil);
+    root.presentationMode = QPresentationModeModalForm;
+    root.grouped = YES;
+    root.controllerName = @"NotificationViewController";
+    
+    // first section
+    QSection *firstSection = [[QSection alloc]initWithTitle:NSLocalizedString(@"kNewsNotify", nil)];
+    QBooleanElement *boolElement = [[QBooleanElement alloc] initWithTitle:NSLocalizedString(@"kNewsNotify", nil) BoolValue:YES];
+    boolElement.controllerAction = @"newsNotify:";
+    boolElement.key = @"bool1";
+    [firstSection addElement:boolElement];
+    
+    [root addSection:firstSection];
+    
+    // second section
+    QSection *secondSection = [[QSection alloc]initWithTitle:NSLocalizedString(@"kHowToNotify", nil)];
+    QBooleanElement *soundElement = [[QBooleanElement alloc] initWithTitle:NSLocalizedString(@"kSound", nil) BoolValue:YES];
+    soundElement.controllerAction = @"soundNotify:";
+    soundElement.key = @"bool2";
+    [secondSection addElement:soundElement];
+    
+    QBooleanElement *vibrateElement = [[QBooleanElement alloc] initWithTitle:NSLocalizedString(@"kVibrate", nil) BoolValue:YES];
+    vibrateElement.controllerAction = @"vibrateNotify:";
+    vibrateElement.key = @"bool3";
+    [secondSection addElement:vibrateElement];
+    
+    [root addSection:secondSection];
+    
+    // third section
+    QSection *thirdSection = [[QSection alloc]initWithTitle:NSLocalizedString(@"kUpdateNotif", nil)];
+    QBooleanElement *updateNotifElement = [[QBooleanElement alloc] initWithTitle:NSLocalizedString(@"kUpdateNotif", nil) BoolValue:YES];
+    updateNotifElement.controllerAction = @"updateNotify:";
+    updateNotifElement.key = @"bool4";
+    [thirdSection addElement:updateNotifElement];
+    thirdSection.footer = NSLocalizedString(@"kUpdateFieldFooter", nil);
+    
+    [root addSection:thirdSection];
+    
+    return [NotificationViewController controllerWithNavigationForRoot:root];
+}
+
+#pragma mark - create private view
+- (PrivateViewController *)createPrivateView {
+    QRootElement *root = [[QRootElement alloc] init];
+    root.title = NSLocalizedString(@"kPrivateText", nil);
+    root.presentationMode = QPresentationModeModalForm;
+    root.grouped = YES;
+    root.controllerName = @"PrivateViewController";
+    
+    QSection *firstSection = [[QSection alloc]init];
+    QBooleanElement *boolElement = [[QBooleanElement alloc] initWithTitle:NSLocalizedString(@"kNeedCert", nil) BoolValue:YES];
+    boolElement.controllerAction = @"booleanAction:";
+    boolElement.key = @"bool1";
+    [firstSection addElement:boolElement];
+    
+    [root addSection:firstSection];
+    
+    return [PrivateViewController controllerWithNavigationForRoot:root];
 }
 
 #pragma mark - UIActionSheet delegate

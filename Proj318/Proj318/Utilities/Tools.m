@@ -10,6 +10,9 @@
 #import "StartViewController.h"
 #import "AppDelegate.h"
 
+
+#define MY_DESC    @"myDescription"
+
 @implementation Tools
 
 + (void)setStartViewController {
@@ -18,6 +21,15 @@
     nav.navigationBarHidden = YES;
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     appDelegate.window.rootViewController = nav;
+}
+
++ (void)setDesc:(NSString *)desc {
+    [[NSUserDefaults standardUserDefaults] setObject:desc forKey:MY_DESC];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (NSString *)getDesc {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:MY_DESC];
 }
 
 @end

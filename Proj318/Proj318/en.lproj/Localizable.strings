@@ -47,6 +47,27 @@
 
 "kMyInfo" = "My Info";
 "kUserName" = "Alex";
+"kGender" = "Gender";
+"kChangeGender" = "Change gender";
+"kAddress" = "Address";
+"kDesc" = "Description";
+"kModifyDesc" = "Modify Description";
 "kDone" = "DONE";
 "kDelete" = "Delete";
 "kSlideDelete" = "Left slide to remove item";
+"kChangePortrait" = "Change Portrait";
+"kTakeAPhoto" = "Take a photo";
+"kSavePortrait" = "Save";
+"kSaveDesc" = "Save";
+"kSaveName" = "Save";
+"kNeedCert" = "Validate when add friend";
+"kNewsNotify" = "New message notify";
+"kHowToNotify" = "How to notify";
+"kSound" = "Sound";
+"kVibrate" = "Vibrate";
+"kUpdateNotif" = "Update Notify";
+"kUpdateFieldFooter" = "There will be notifications when other people add new todo item";
+"kMan" = "Man";
+"kWoman" = "Woman";
+"kModifyName" = "Change Name";
+"kNamePlaceholder" = "New name";

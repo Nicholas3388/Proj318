@@ -1,14 +1,14 @@
 //
-//  NotificationViewController.h
+//  nameChangeViewController.h
 //  Proj318
 //
-//  Created by apple on 16/3/29.
+//  Created by 王妍慧 on 16/5/4.
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "QuickDialogController.h"
 
-@interface NotificationViewController : QuickDialogController
+@interface NameChangeViewController : QuickDialogController
 
 @end

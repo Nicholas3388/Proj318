@@ -6,9 +6,10 @@
 //  Copyright © 2016年 apple. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "QuickDialogController.h"
 
-@interface PrivateViewController : BaseViewController
+@interface PrivateViewController : QuickDialogController
 
 @end

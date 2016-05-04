@@ -10,12 +10,21 @@
 #import "MyDetailInfoView.h"
 #import "MyOtherInfoViewCell.h"
 #import "ChangePortraitViewController.h"
+#import "DescViewController.h"
+#import "NameChangeViewController.h"
+#import "QRootElement.h"
+#import "QMultilineElement.h"
+#import "Tools.h"
 
 @implementation MyInfoViewController {
     // private
     UITableView *_tableView;
     
     MyDetailInfoView *_headView;
+    
+    UIPickerView* _picker;
+    
+    NSArray *_genders;
 }
 
 #pragma mark - load view
@@ -55,13 +64,53 @@
     _headView.portrait.userInteractionEnabled = YES;
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(portraitClicked:)];
     [_headView.portrait addGestureRecognizer:tapGesture];
+    
+    _genders = [NSArray arrayWithObjects:NSLocalizedString(@"kMan", nil), NSLocalizedString(@"kWoman", nil), nil];
 }
+
 
 #pragma mark - portrait clicked
 - (void)portraitClicked:(UITapGestureRecognizer *)recognizer {
     ChangePortraitViewController *viewController = [[ChangePortraitViewController alloc]init];
     [self.navigationController pushViewController:viewController animated:YES];
     NSLog(@"portrait click");
+}
+
+#pragma mark - create description view
+- (DescViewController *)createDescView {
+    QRootElement *root = [[QRootElement alloc] init];
+    root.title = NSLocalizedString(@"kModifyDesc", nil);
+    root.presentationMode = QPresentationModeModalForm;
+    root.grouped = YES;
+    root.controllerName = @"DescViewController";
+    
+    QSection *firstSection = [[QSection alloc]init];
+    QMultilineElement *multiline = [[QMultilineElement alloc] initWithTitle:NSLocalizedString(@"kModifyDesc", nil) value:@""];
+    multiline.key = @"multiline";
+    [firstSection addElement:multiline];
+    
+    [root addSection:firstSection];
+    
+    return [DescViewController controllerWithNavigationForRoot:root];
+}
+
+#pragma mark - change user name
+- (NameChangeViewController *)createNameChangeView {
+    QRootElement *root = [[QRootElement alloc] init];
+    root.title = NSLocalizedString(@"kModifyName", nil);
+    root.presentationMode = QPresentationModeModalForm;
+    root.grouped = YES;
+    root.controllerName = @"NameChangeViewController";
+    
+    QSection *firstSection = [[QSection alloc]init];
+    QEntryElement *entryElement = [[QEntryElement alloc] initWithTitle:NSLocalizedString(@"kMyName", nil) Value:nil Placeholder:NSLocalizedString(@"kNamePlaceholder", nil)];
+    entryElement.key = @"entry1";
+    [firstSection addElement:entryElement];
+    entryElement.controllerAction = @"onDone:";
+    
+    [root addSection:firstSection];
+    
+    return [NameChangeViewController controllerWithNavigationForRoot:root];
 }
 
 #pragma mark - table view delegate
@@ -117,10 +166,15 @@
                     break;
                 case 2:
                 {
+                    cell.item.text = NSLocalizedString(@"kGender", nil);
+                    cell.content.text = @"M";
                 }
                     break;
                 case 3:
-                {}
+                {
+                    cell.item.text = NSLocalizedString(@"kAddress", nil);
+                    cell.content.text = @"Beijing";
+                }
                     break;
                 default:
                     break;
@@ -139,7 +193,8 @@
                 cell = [tableView dequeueReusableCellWithIdentifier:cellID];
             }
             
-            cell.item.text = NSLocalizedString(@"kUserName", nil);
+            cell.item.text = NSLocalizedString(@"kDesc", nil);
+            cell.content.text = [Tools getDesc];
             
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             
@@ -154,7 +209,88 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    switch (indexPath.section) {
+        case 0:
+        {
+            switch (indexPath.row) {
+                case 0:
+                {
+                    // change user name
+                    NameChangeViewController *ncvc = [self createNameChangeView];
+                    [self presentModalViewController:ncvc animated:YES];
+                }
+                    break;
+                case 1:
+                {
+                }
+                    break;
+                case 2:
+                {
+                    // change gender
+                    _picker = [[UIPickerView alloc] init];
+                    _picker.delegate = self;
+                    _picker.dataSource = self;
+                    [_picker reloadAllComponents];
+                    
+                    UIAlertController* alertVc=[UIAlertController alertControllerWithTitle:@"\n\n\n\n\n\n\n\n" message:nil preferredStyle:(UIAlertControllerStyleActionSheet)];
+                    
+                    UIAlertAction* ok=[UIAlertAction actionWithTitle:NSLocalizedString(@"kConfirm", nil) style:(UIAlertActionStyleDestructive) handler:^(UIAlertAction *action) {
+                    }];
+                    
+                    UIAlertAction* no=[UIAlertAction actionWithTitle:NSLocalizedString(@"kCancel", nil) style:(UIAlertActionStyleDefault) handler:nil];
+                    
+                    [alertVc.view addSubview:_picker];
+                    [alertVc addAction:ok];
+                    [alertVc addAction:no];
+                    
+                    [self presentViewController:alertVc animated:YES completion:nil];
+                }
+                    break;
+                case 3:
+                {
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+        }
+            break;
+            
+        case 1:
+        {
+            DescViewController *dvc = [self createDescView];
+            [self presentModalViewController:dvc animated:YES];
+        }
+            
+        default:
+            break;
+    }
+}
+
+#pragma mark - UIPickerView delegate
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [_genders count];
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+    return 30.0;
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
+    return self.view.frame.size.width;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    NSLog(@"%ld", (long)row);
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [_genders objectAtIndex:row];
 }
 
 @end

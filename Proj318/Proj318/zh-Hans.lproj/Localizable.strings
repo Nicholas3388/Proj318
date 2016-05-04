@@ -47,6 +47,27 @@
 
 "kMyInfo" = "个人信息";
 "kUserName" = "李大嘴";
+"kGender" = "性别";
+"kChangeGender" = "修改性别";
+"kAddress" = "住址";
+"kDesc" = "个性签名";
+"kModifyDesc" = "修改个性签名";
 "kDone" = "完成";
 "kDelete" = "删除";
 "kSlideDelete" = "向左滑动删除";
+"kChangePortrait" = "修改头像";
+"kTakeAPhoto" = "拍照";
+"kSavePortrait" = "保存头像";
+"kSaveDesc" = "保存签名";
+"kSaveName" = "保存";
+"kNeedCert" = "加我为好友时需要验证";
+"kNewsNotify" = "新消息提醒";
+"kHowToNotify" = "提醒方式";
+"kSound" = "声音";
+"kVibrate" = "震动";
+"kUpdateNotif" = "日程更新提醒";
+"kUpdateFieldFooter" = "开启后他人给你添加新日程时，将会有声音或震动提醒";
+"kMan" = "男";
+"kWoman" = "女";
+"kModifyName" = "修改用户名";
+"kNamePlaceholder" = "新用户名";

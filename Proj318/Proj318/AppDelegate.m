@@ -12,6 +12,8 @@
 #import "GuideView.h"
 #import "BPush.h"
 #import "TuSDKFramework.h"
+#import "AppConfig.h"
+#import "Tools.h"
 #import <EaseMobSDK/EaseMob.h>
 
 static BOOL isBackGroundActivateApplication;
@@ -34,8 +36,16 @@ static BOOL isBackGroundActivateApplication;
     self.window.rootViewController = nav;
     nav.navigationBarHidden = YES;
     
-    // set guide view
-    [self setupGuideView];
+    //////////////////////////
+    // is first time to launch this app?
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:DEVICE_VERSION]) {
+        // set guide view
+        [self setupGuideView];
+        [self setDefaultData];
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:DEVICE_VERSION];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     
     //////////////////////////
     // setup Baidu Push
@@ -194,6 +204,11 @@ static BOOL isBackGroundActivateApplication;
 - (void)setupGuideView {
     GuideView *guideView = [[GuideView alloc]initWithFrame:self.window.bounds];
     [guideView showView:self.window];
+}
+
+#pragma mark - set default data
+- (void)setDefaultData {
+    [Tools setDesc:@"Hello world"];
 }
 
 @end
